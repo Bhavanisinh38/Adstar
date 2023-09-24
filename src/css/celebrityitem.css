@@ -1,0 +1,230 @@
+/* --- Celebrity Item --- */
+.celebrity-item{
+    cursor: pointer;
+}
+
+.celebrity-item .celebrity-img-bx{
+    position: relative;
+    padding-top: 127%;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+
+.celebrity-item .celebrity-img-bx .celebrity-img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.celebrity-item .celebrity-img-bx:hover .celebrity-img{
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.celebrity-item .celebrity-img-bx .celebrity-highlight{
+    position: absolute;
+    right: 0;
+    top: 0px;
+    background-color: #ff942d;
+    background-image: linear-gradient(-45deg, #9401d8,#d418a0, #ec3a7c, #ff942d, #ffcc00);
+    color: white;
+    font-size: 12px;
+    width: 40px;
+    height: 40px;
+    padding: 8px 0 0px 12px;
+    border-radius: 0px 0 0 40px;
+    box-shadow: 0 0 30px -8px black;
+}
+
+.celebrity-item .favourite-tag{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 36px;
+    color: #f2f1f3;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.celebrity-item .favourite-tag:hover{
+    background-color: rgba(242, 241, 243, 0.08);
+    color: white;
+}
+
+.celebrity-item .favourite-tag.active{
+    background-color: #d418a0;
+    color: #ffffff;
+}
+
+.celebrity-item .celebrity-name{
+    color: #f2f1f3;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.celebrity-item .celebrity-categorie{
+    color: #ff942d;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.celebrity-item .celebrity-profession{
+    color: rgb(129, 122, 138);
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.celebrity-item .celebrity-tag{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2px 0 3px;
+}
+
+.celebrity-item .celebrity-tag .ct-item{
+    color: #f2f1f3;
+    font-size: 13px;
+}
+
+.celebrity-item .celebrity-tag .ct-item .fa{
+    color: rgb(235, 228, 70);
+    font-size: 10px;
+    margin-right: 5px;
+    position: relative;
+    top: -1px;
+}
+
+.celebrity-item .celebrity-tag .ct-item .fa-bolt{
+    font-size: 11px;
+}
+
+.celebrity-item .celebrity-tag .ct-item span{
+    color: rgb(129, 122, 138);
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+.celebrity-item  .celebrity-followers-tags{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px 0 3px;
+}
+
+.celebrity-item  .celebrity-followers-tags .cft-item{
+    color: #f2f1f3;
+    font-size: 12px;
+    margin-top: 6px;
+    margin-right: 6px;
+}
+
+.celebrity-item  .celebrity-followers-tags .cft-item:last-child{
+    margin-right: 0px;
+}
+
+.celebrity-item  .celebrity-followers-tags .fa{
+    font-size: 10px;
+    margin-right: 2px;
+    position: relative;
+    top: -1px;
+    border: 1px solid rgb(63, 59, 69);
+    width: 18px;
+    height: 18px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+}
+
+.celebrity-item .celebrity-price{
+    color: #f2f1f3;
+    font-size: 14px;
+}
+
+.celebrity-item .celebrity-price span{
+    color: rgb(129, 122, 138);
+    font-size: 12px;
+    margin-left: 1px;
+    font-weight: 500;
+}
+
+
+/* --- Celebrity Item design 2 --- */
+
+.celebrity-item.ci-two{
+    position: relative;
+    border-radius: 12px;
+    box-shadow: 0 0 10px #00000070;
+    border: 1px solid rgb(63, 59, 69);
+    transition: border 150ms ease-in-out 0s;
+}
+
+.celebrity-item.ci-two > div{
+    position: relative;
+    z-index: 1;
+    padding: 12px;
+    border-radius: 12px;
+    background-color: rgb(25, 24, 27);
+    transition: background-color 150ms ease-in-out 0s;
+}
+
+.celebrity-item.ci-two::before{
+    content: "";
+    position: absolute;
+    display: block;
+    inset: -1px;
+    border-radius: inherit;
+    transition: opacity 150ms ease-in-out 0s;
+    opacity: 0;
+    background-image: linear-gradient(-45deg, #9401d8,#d418a0, #ec3a7c, #ff942d, #ffcc00);
+}
+
+.celebrity-item.ci-two:hover{
+    border-color: transparent;
+}
+
+.celebrity-item.ci-two > div:hover{
+    background-color: rgb(32, 30, 35);
+}
+
+.celebrity-item.ci-two:hover::before{
+    opacity: 1;
+}
+
+
+.celebrity-item.ci-two .celebrity-img-bx{
+    padding-top: 0;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.celebrity-item.ci-two .celebrity-img-bx .celebrity-img{
+    object-position: top center;
+}
+
+.celebrity-item.ci-two .celebrity-name{
+    font-size: 16px;
+}
+
+.celebrity-item.ci-two .celebrity-profession{
+    margin-top: -3px;
+}
+
+.celebrity-item.ci-two .celebrity-followers-tags{
+    margin: 4px 0 10px;
+}

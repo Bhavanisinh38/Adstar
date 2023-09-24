@@ -1,0 +1,33 @@
+/* --- How It Work Section --- */
+.hiw-section{
+    padding: 20px 20px;
+    background-color: #201e23;
+    border-radius: 16px;
+    height: 100%;
+}
+
+.hiw-section .hiw-icon{
+    display: block;
+    width: 25px;
+    height: 25px;
+    margin-bottom: 15px;
+}
+
+.hiw-section .hiw-icon svg{
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: contain;
+}
+
+.hiw-section .hiw-lable{
+    color: #f2f1f3;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.hiw-section .hiw-data{
+    color: rgb(129, 122, 138);
+    font-size: 14px;
+    font-weight: 400;
+}

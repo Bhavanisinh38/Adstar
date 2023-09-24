@@ -1,0 +1,697 @@
+.search-main-section{
+    max-width: 1920px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+}
+
+
+/* --- Search Page Left Css --- */
+.spage-left{
+    position: fixed;
+    top: 70px;
+    right: 0;
+    height: calc(100vh - 70px);
+    overflow: hidden;
+    overflow-y: auto;
+    flex: 0 1 320px;
+    width: 320px;
+    background-color: #201e23;
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.08);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(100%);
+    padding-bottom: 100px;
+    transition:  transform 0.3s ease-in-out, opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.spage-left.active{
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+}
+
+.spage-left::-webkit-scrollbar{
+    display: none;
+}
+
+/* .spage-left::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    width: 1px;
+    height: 95%;
+    background: rgb(48, 45, 52);
+} */
+
+.sp-left-header {
+    padding: 17px 15px;
+    position: relative;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background: #201e23;
+    border-bottom: 1px solid rgb(48, 45, 52);
+}
+
+.sp-left-header .slp-lable {
+    margin: 0;
+    font-weight: 500;
+    font-size: 18px;
+    color: white;
+    letter-spacing: 0.5px;
+}
+
+.sp-left-header .close-icon{
+    display:none;
+}
+
+.all-reset-btn {
+    position: absolute;
+    right: 13px;
+    top: 16px;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 4px 10px 3px;
+    display: block;
+    color: white;
+    border: 1px solid rgba(242, 241, 243, 0.6);
+    border-radius: 25px;
+    letter-spacing: 0.5px;
+    user-select: none;
+    transition: 0.3s ease-in-out;
+}
+
+.all-reset-btn.active {
+    cursor: pointer;
+    opacity: 1;
+    visibility: visible;
+}
+
+.all-reset-btn.active:hover {
+    color: white;
+    background-color: #8036e0;
+    border-color: #8036e0;
+}
+
+.acc-item {
+    position: relative;
+    padding: 0 15px;
+    border-bottom: 1px solid rgb(48, 45, 52);
+}
+
+.acc-item:last-child {
+    border-bottom: none;
+}
+
+.acc-item .acc-heding {
+    color: white;
+    padding: 12px 0px;
+    background: transparent;
+    font-weight: 400;
+    text-transform: capitalize;
+    font-size: 16px;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.acc-item .acc-heding.collapsed {
+    opacity: 0.7;
+}
+
+.acc-item .acc-heding.collapsed:hover {
+    opacity: 1;
+}
+
+.acc-item .acc-heding span.down-icon {
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    font-size: 20px;
+    border-radius: 50%;
+    transition: 0.3s ease;
+
+}
+
+.acc-item .acc-heding.collapsed span.down-icon {
+    transform: translateY(-50%) rotate(180deg);
+}
+
+.acc-item .acc-detail {
+    position: relative;
+}
+
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 0em;
+    margin-bottom: 10px;
+}
+
+.checkbox-group.cg-flex-row {
+    flex-direction: row;
+}
+
+.checkbox-group input {
+    display: none;
+}
+
+.checkbox-group label {
+    cursor: pointer;
+    position: relative;
+    color: #f2f1f3;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin: 4px 0;
+    padding: 5px 0px 5px 0px;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    background-color: transparent;
+    transition: 0.3s ease-in-out;
+}
+
+.checkbox-group label .fa-star{
+    color: rgb(235, 228, 70);
+    margin: 0 5px;
+}
+
+.checkbox-group label .fa-user{
+    margin: 0 5px 0 5px;
+    position: relative;
+    top: -1px;
+}
+
+/* .checkbox-group.start-boxs label {
+    padding: 4px 8px;
+    margin: 2px 0;
+}
+
+.checkbox-group label .svg-inline--fa.fa-star {
+    color: #ffa622;
+    font-size: 16px;
+}
+
+.checkbox-group label .svg-inline--fa.fa-star.star-active {
+    color: #ffa622;
+} */
+
+.checkbox-group.cg-flex-row label {
+    margin-right: 8px;
+    border: 1px solid rgba(242, 241, 243, 0.6);
+    padding: 5px 10px;
+    font-weight: 500;
+}
+
+.checkbox-group.cg-flex-row input:checked + label {
+    background-color: white;
+    border-color: #8036e0;
+    color: #8036e0;
+    font-weight: 500;
+}
+
+
+.checkbox-group label img {
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+    -o-object-fit: contain;
+    object-fit: contain;
+    -o-object-position: center;
+    object-position: center;
+    margin-right: 5px;
+}
+
+.checkbox-group.round-img label img {
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
+    border-radius: 50%;
+}
+
+.checkbox-group label span.check-icon {
+    width: 24px;
+    height: 24px;
+    flex: 0 0 24px;
+    border-radius: 50%;
+    margin-right: 8px;
+    background-color: transparent;
+    background-position: center;
+    box-shadow: 0 0 0px 4px rgb(63 59 69 / 0%) inset;
+    border: 2px solid rgb(63, 59, 69);
+    transition: 0.3s ease-in-out;
+}
+
+.checkbox-group.check-icon-hide label span.check-icon {
+    display: none;
+}
+
+.checkbox-group.check-square label span.check-icon {
+    border-radius: 5px;
+}
+
+.checkbox-group label span.num-tag {
+    position: absolute;
+    right: 6px;
+    top: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    /* width: 30px; */
+    text-align: right;
+    display: block;
+    color: rgb(129, 122, 138);
+    /* display: none; */
+}
+
+.checkbox-group label span.num-tag::before {
+    content: "(";
+}
+
+.checkbox-group label span.num-tag::after {
+    content: ")";
+}
+
+.checkbox-group.layover-cb label {
+    padding: 5px 10px 5px 10px;
+    border-radius: 20px;
+}
+
+.checkbox-group.full-width-cb label {
+    width: 100%;
+    /* padding-right: 35px; */
+}
+
+.checkbox-group label:hover {
+    color: white;
+}
+
+.checkbox-group input:checked+label {
+    color: white;
+}
+
+.checkbox-group input:checked+label span.check-icon {
+    background-color: #ffffff;
+    box-shadow: 0 0 0px 4px #8036e0 inset;
+}
+
+.checkbox-group.check-square input:checked+label span.check-icon {
+    background-image: url(../img/icons/check.svg);
+    background-color: #8036e0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 90%;
+    box-shadow: none;
+}
+
+
+
+/* --- Serach Page Right Css --- */
+.spage-right{
+    flex: 1 0 calc(100% - 320px);
+    width: calc(100% - 320px);
+    padding: 0 0 15px;
+    transition: 0.3s ease;
+}
+
+.spage-right.active{
+    padding-right: 320px;
+}
+
+.spage-r-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    position: sticky;
+    top: 70px;
+    background: #121114;
+    border-bottom: 1px solid black;
+    z-index: 2;
+}
+
+.spage-r-lable{
+    font-size: 32px;
+    line-height: normal;
+    font-weight: 500;
+}
+
+.showing-result{
+    color: #f2f1f3;
+    font-size: 14px;
+    display: inline-block;
+    margin-left: 5px;
+    font-weight: 400;
+}
+
+.spage-r-list-row{
+    margin: 0 5px;
+}
+
+.spage-r-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spage-r-btn .sortfilterbtn{
+    border: 1px solid rgba(242, 241, 243, 0.6);
+    padding: 7px 14px;
+    border-radius: 50px;
+    color: rgb(242, 241, 243);
+    font-size: 14px;
+    margin-right: 10px;
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.spage-r-btn .sortfilterbtn span{
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(129, 122, 138);
+    transition: 0.3s ease-in-out;
+}
+
+.spage-r-btn .sortfilterbtn:hover span{
+    color: #8036e0;
+}
+
+.spage-r-btn .sortfilterbtn span::before {
+    content: ": (";
+}
+
+.spage-r-btn .sortfilterbtn span::after {
+    content: ")";
+}
+
+.spage-r-btn .sortfilterbtn.active,
+.spage-r-btn .sortfilterbtn:hover{
+    background-color: white;
+    border-color: white;
+    color: #8036e0;
+}
+
+.spage-r-btn .sortfilterbtn .fa{
+    margin-left: 7px;
+    font-size: 16px;
+    position: relative;
+    top: 1px;
+    transition: 0.3s ease;
+}
+
+.spage-r-btn .sortfilterbtn:last-child{
+    margin-right: 0;
+}
+
+.spage-r-btn .sortfilterbtn:nth-child(1) img{
+    padding: 1px;
+    top: -2px;
+    margin-right: 5px;
+}
+
+.spage-r-btn .sortfilterbtn img{
+    width: 16px;
+    height: 16px;
+    margin-right: 7px;
+    object-fit: contain;
+    object-position: center;
+    position: relative;
+    top: -1px;
+    filter: brightness(10);
+}
+
+.spage-r-btn .sortfilterbtn.active img,
+.spage-r-btn .sortfilterbtn:hover img{
+    filter: brightness(1);
+}
+
+.search-main-section .col-lg-3{
+    margin-top: 2rem !important;
+}
+
+/* --- Sort Filter Popup Css --- */
+.sort-filter-popup{
+    max-width: 420px;
+    width: 100%;
+    position: fixed;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 111;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.sort-filter-popup.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+.sort-filter-inner{
+    position: relative;
+    padding: 20px 25px 15px;
+    background-color: rgb(32, 30, 35);
+    border-radius: 16px;
+    box-shadow: rgba(0, 0, 0, 0.01) 0px 207px 58px, rgba(0, 0, 0, 0.08) 0px 132px 53px, rgba(0, 0, 0, 0.27) 0px 74px 45px, rgba(0, 0, 0, 0.45) 0px 33px 33px, rgba(0, 0, 0, 0.52) 0px 8px 18px, rgba(0, 0, 0, 0.53) 0px 0px 0px, rgba(255, 255, 255, 0.08) 0px 1px 1px inset, rgba(0, 0, 0, 0.25) 0px 0px 0px 1px inset;
+    width: 100%;
+}
+
+.sort-popup-lable{
+    font-size: 20px;
+    line-height: normal;
+    font-weight: 500;
+    color: #f2f1f3;
+    margin-bottom: 10px;
+}
+
+.sort-filter-popup .checkbox-group label{
+    font-size: 16px;
+}
+/* --- Sort Filter Popup Css End --- */
+
+/* --- sortfilter Footer Btn --- */
+.sortfilter-footer{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 5px 10px;
+    position: sticky;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    background: rgb(32, 30, 35);
+    border-top: 1px solid rgb(48, 45, 52);
+}
+
+.sortfilter-footer > div.sff-btn{
+    display: block;
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 50px;
+    background: linear-gradient(45deg, #ffcc00, #fe5661, #ec397d, #cc11a9, #9000dc);
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    width: 140px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.sortfilter-footer > div.sff-btn:active{
+    transform: scale(0.95);
+}
+/* --- sortfilter Footer Btn End --- */
+
+
+.search-main-section .spage-right .col-lg-3 {
+    padding: 0 8px;
+}
+
+@media (min-width: 1100px){
+    .search-main-section .spage-right .col-lg-3 {
+        width: 20%;
+        transition: flex 0.3s ease;
+    }
+
+    .search-main-section .spage-right.active .col-lg-3 {
+        width: 25%;
+        transition: flex 0.3s ease;
+    }
+}
+
+@media (min-width: 700px){
+    .sort-filter-popup{
+        padding: 10px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%) scale(0.9);
+    }
+    
+    .sort-filter-popup.active{
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+@media (max-width: 992px){
+
+    .spage-right.active{
+        padding-right: 0;
+    }
+
+    .spage-left{
+        top: 0px;
+        height: calc(100vh - 0px);
+        z-index: 111;
+    }
+
+    .all-reset-btn{
+        right: 55px;
+    }
+
+    .sp-left-header .close-icon{
+        display:flex;
+        top: 15px;
+    }
+
+    .serach-overlay.filter-active{
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px){
+    .spage-r-top{
+        top: 120px;
+    }
+}
+
+@media (max-width: 700px){
+    .pagination-bx {
+        padding-bottom: 50px;
+    }
+
+    .sortfilter-footer{
+        display: flex;
+    }
+
+    .spage-r-btn{
+        position: fixed;
+        bottom: 0;
+        background: black;
+        width: 100%;
+        padding: 0px;
+        left: 0;
+        border-top: 1px solid rgb(48, 45, 52);
+        box-shadow: 0 10px 30px #0000009c;
+    }
+
+    .spage-r-btn::after{
+        content: "";
+        position: absolute;
+        width: 0.1px;
+        height: 80%;
+        background-color: rgb(129, 122, 138);
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0.5;
+    }
+
+    .spage-r-btn .sortfilterbtn{
+        flex: 0 0 50%;
+        border: none;
+        text-align: center;
+        padding: 15px 5px;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .spage-r-btn .sortfilterbtn.active,
+    .spage-r-btn .sortfilterbtn:hover{
+        background-color: transparent;
+        color: #8036e0;
+    }
+
+    .spage-left {
+        width: 100%;
+        top: inherit;
+        bottom: 0;
+        right: 0;
+        height: auto;
+        overflow: hidden;
+        border-radius: 16px 16px 0 0;
+        transform: translateY(100%);
+        padding-bottom: 0;
+    }
+
+    .spage-left.active{
+        transform: translateY(0%);
+    }
+
+    .spage-left .serach-filter-accordion{
+        max-height: calc(100vh - 61px - 62px - 100px);
+        overflow: hidden;
+        overflow-y: auto;
+    }
+
+    .spage-left .serach-filter-accordion::-webkit-scrollbar{
+        display: none;
+    }
+
+    .sort-filter-popup{
+        left: 0;
+        bottom: 0;
+        max-width: 100%;
+        transform: translateY(100%);
+    }
+
+    .sort-filter-popup.active{
+        transform: translateY(0%);
+    }
+
+    .sort-filter-inner{
+        max-height: calc(100vh - 70px);
+        overflow: hidden;
+        overflow: auto;
+        border-radius: 16px 16px 0 0;
+        padding: 0px;
+    }
+
+    .sort-filter-inner::-webkit-scrollbar{
+        display: none;
+    }
+
+    .sort-popup-lable {
+        padding: 25px 20px 0;
+    }
+
+    .sort-filter-popup .checkbox-group{
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 576px){
+    .spage-r-btn .sortfilterbtn span{
+        display: none;
+    }
+}
+
+@media (max-width: 450px){
+    .search-main-section .spage-right .col-lg-3 {
+        padding: 0 4px;
+    }
+}

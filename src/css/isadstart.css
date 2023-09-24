@@ -1,0 +1,17 @@
+/* --- Thsi is adstar Section --- */
+.tiadstart-section{
+    padding: 0px 0px 10px;
+    height: 100%;
+}
+
+.tiadstart-section .tiadstart-lable{
+    color: #f2f1f3;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.tiadstart-section .tiadstart-data{
+    color: rgb(191, 186, 196);
+    font-size: 14px;
+    font-weight: 400;
+}

@@ -1,0 +1,101 @@
+
+/* --- custom-row-categories --- */
+.custom-row-categories{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.custom-row-categories .crc-item{
+    padding: 0px 10px;
+    flex: 0 0 14.28%;
+    margin-top: 16px;
+}
+
+.crc-item .crc-item-inner{
+    cursor: pointer;
+}
+
+.crc-item .crc-item-inner .crc-img{
+    position: relative;
+    border: 1px solid white;
+    background-color: transparent;
+    width: 100%;
+    padding-top: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.crc-item .crc-item-inner .crc-img img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+    transition: 0.3s ease-in-out;
+}
+
+.crc-item .crc-item-inner:hover .crc-img{
+    background-color: #8036e0;
+}
+
+.crc-item .crc-item-inner:hover .crc-img img{
+    transform: scale(1.09);
+}
+
+.crc-item.crc-view-all .crc-item-inner .crc-img .crc-text,
+.crc-item .crc-item-inner .crc-name{
+    color: #f2f1f3;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 10px auto 10px;
+    width: fit-content;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.crc-item.crc-view-all .crc-item-inner .crc-img .crc-text{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    font-size: 16px;
+}
+
+
+@media screen and (max-width:992px) {
+
+    .custom-row-categories .crc-item{
+        flex: 0 0 16.66%;
+    }
+
+    .custom-row-categories .crc-item.crc-view-all{
+        flex: 0 0 100%;
+        margin-top: 20px;
+    }
+
+    .crc-item.crc-view-all .crc-item-inner .crc-img{
+        padding: 0;
+        height: 50px;
+        border-radius: 50px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .custom-row-categories .crc-item{
+        flex: 0 0 25.01%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .custom-row-categories .crc-item{
+        flex: 0 0 33.33%;
+    }
+    .crc-item .crc-item-inner .crc-name{
+        font-size: 12px;
+    }
+}
