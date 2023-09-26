@@ -372,14 +372,17 @@ Seconde Screen
 }
 
 /* --- File Upload List --- */
+.dataupload-list,
 .fileupload-list{
     display: block;
     padding: 0;
 }
 
+.dataupload-list .dataupload-item,
 .fileupload-list .fileupload-item{
     position: relative;
     padding: 12px;
+    font-size: 16px;
     margin-top: 15px;
     border-radius: 12px;
     box-shadow: 0 0 10px #00000070;
@@ -392,7 +395,25 @@ Seconde Screen
     text-overflow: ellipsis;
 }
 
+.dataupload-list .dataupload-item{
+    list-style: none;
+    padding-right: 40px;
+    padding: 6px 12px;
+}
+
+.dataupload-list .dataupload-item .dui-item{
+    font-size: 17px;
+}
+
+.dataupload-list .dataupload-item .dui-item span{
+    color: rgb(129, 122, 138);
+    font-size: 14px;
+    margin-left: 2px;
+    font-weight: 500;
+}
+
 .fileupload-list .fileupload-item .fileupload-play,
+.dataupload-list .dataupload-item .clear-input-icon,
 .fileupload-list .fileupload-item .clear-input-icon{
     top: 4px;
 }
@@ -494,6 +515,13 @@ input[type=number] {
     transition: all 0.3s ease;
 }
 
+.signinup-group select[disabled],
+.signinup-group textarea[disabled],
+.signinup-group input[disabled] {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
 /* .signinup-group select option:first-child {
     font-weight: bold;
     color: red;
@@ -507,7 +535,7 @@ input[type=number] {
 
 .signinup-group.sgri input,
 .signinup-group.sgri select{
-    padding-right: 50px;
+    padding-right: 40px;
 }
 
 .signinup-group input[type="password"] {
@@ -538,7 +566,7 @@ input[type=number] {
     left: 0px;
     top: 25px;
     height: 46px;
-    width: 44px;
+    width: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -566,6 +594,7 @@ input[type=number] {
     position: absolute;
     right: 14px;
     top: 40px;
+    pointer-events: none;
 }
 
 .signinup-group input:hover {
@@ -776,6 +805,7 @@ Error Input color css
 }
 
 /* --- login submit btn --- */
+.common-submit-btn,
 .lsb-loader-btn,
 .login-submit-btn{
     display: flex;
@@ -798,14 +828,17 @@ Error Input color css
     width: 100%;
 }
 
+.common-submit-btn[disabled],
 .login-submit-btn[disabled]{
     opacity: 0.7; 
 }
 
+.common-submit-btn:hover,
 .login-submit-btn:hover{
     color: white;
 }
 
+.common-submit-btn:active,
 .login-submit-btn:active{
     transform: scale(0.9);
 }
@@ -834,6 +867,13 @@ Error Input color css
 
 /* --- Next Previous Btn --- */
 .nextprevious-bx{
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    width: calc(100% + 30px);
+    transform: translateX(-15px);
+    z-index: 1;
+    background: #121114;
     margin-top: 15px;
     display: flex;
     justify-content: space-between;
@@ -845,7 +885,7 @@ Error Input color css
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 5px 15px;
+    padding: 8px 20px;
     border-radius: 50px;
     width: fit-content;
     font-weight: 400;
@@ -991,6 +1031,37 @@ Error Input color css
     color: #ea4436;
 }
 
+/* --- Add More Btn --- */
+
+.add-more-btn{
+    position: relative;
+    background-color: rgb(32, 30, 35);
+    border: 1px dashed rgb(63, 59, 69);
+    border-radius: 10px;
+    padding: 10px 10px;
+    margin: 15px 0;
+    text-align: center;
+    color: #f2f1f3;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-more-btn svg{
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+    transform: rotate(45deg);
+}
+
+.add-more-btn:hover{
+    color: white;
+    border-style: solid;
+    border-color: #8036e0;
+}
+
 
 /* --- Star Portfolio Page Css --- */
 .star-portfolio-main{
@@ -1030,6 +1101,35 @@ Error Input color css
     width: 85px;
 }
 
+.portfolio-price-video{
+    position: relative;
+    background-color: rgb(32, 30, 35);
+    border: 1px dashed rgb(63, 59, 69);
+    border-radius: 10px;
+    padding: 15px 150px 10px 0;
+}
+
+.portfolio-price-video .common-submit-btn{
+    position: absolute;
+    right: 10px;
+    width: 140px;
+    bottom: 7px;
+}
+
+.video-price-list-bx{
+    margin-bottom: 20px;
+}
+
+.video-price-list-bx .vplb-lable{
+    color: #f2f1f3;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 8px 0 8px 0;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid rgb(63, 59, 69);
+}
+
 
 @media screen and (max-width:768px) {
     .progress-bx{
@@ -1049,6 +1149,25 @@ Error Input color css
 
     .profile-row{
         padding-left: inherit;
+    }
+
+    .portfolio-price-video{
+        padding-right: 0;
+    }
+
+    .portfolio-price-video .common-submit-btn{
+        position: relative;
+        right:initial;
+        bottom: initial;
+        margin-bottom: 5px;
+    }
+
+    .dataupload-list .col-6:nth-child(odd){
+        padding-right: 5px;
+    }
+
+    .dataupload-list .col-6:nth-child(even){
+        padding-left: 5px;
     }
 }
 
@@ -1072,6 +1191,7 @@ Error Input color css
     .screen-hed{
         font-size: 22px;
     }
+
 }
 
 @media screen and (max-width:450px) {

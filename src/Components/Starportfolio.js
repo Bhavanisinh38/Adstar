@@ -123,7 +123,7 @@ function Starportfolio() {
                                         <div className="col-sm-6">
                                             <div className="signinup-group sgli">
                                                 <label className="group__label">Phone Number</label>
-                                                <input type="number" placeholder="Enter phone number"/>
+                                                <input type="number" placeholder="Enter phone number" value="8320289867" disabled/>
                                                 <span className="group_left_icon">+91</span>
                                             </div>
                                         </div>
@@ -335,9 +335,290 @@ function Starportfolio() {
                             <div className="psc-hed">Add video prices</div>
                             <div className="psc-pera">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum obcaecati nulla at.</div>
                             <form action="">
+
+                                <div className="video-price-list-bx">
+                                    <div className="vplb-lable">Reels</div>
+                                    <ol className="dataupload-list">
+                                        <div className="row">
+
+                                            <div className="col-lg-4 col-sm-6 col-6">
+                                                <li className="dataupload-item">
+                                                <div className="dui-item">30<span>Day</span></div>
+                                                <div className="dui-item">₹5,000<span>Price</span></div>
+                                                <span className="clear-input-icon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="38" d="M368 368L144 144M368 144L144 368"/></svg>
+                                                </span>
+                                                </li>
+                                            </div>
+
+                                            <div className="col-lg-4 col-sm-6 col-6">
+                                                <li className="dataupload-item">
+                                                <div className="dui-item">60<span>Day</span></div>
+                                                <div className="dui-item">₹10,000<span>Price</span></div>
+                                                <span className="clear-input-icon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="38" d="M368 368L144 144M368 144L144 368"/></svg>
+                                                </span>
+                                                </li>
+                                            </div>
+
+                                            <div className="col-lg-4 col-sm-6 col-6">
+                                                <li className="dataupload-item">
+                                                <div className="dui-item">90<span>Day</span></div>
+                                                <div className="dui-item">₹15,000<span>Price</span></div>
+                                                <span className="clear-input-icon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="38" d="M368 368L144 144M368 144L144 368"/></svg>
+                                                </span>
+                                                </li>
+                                            </div>
+
+                                            <div className="col-lg-4 col-sm-6 col-6">
+                                                <li className="dataupload-item">
+                                                <div className="dui-item">180<span>Day</span></div>
+                                                <div className="dui-item">₹30,000<span>Price</span></div>
+                                                <span className="clear-input-icon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="38" d="M368 368L144 144M368 144L144 368"/></svg>
+                                                </span>
+                                                </li>
+                                            </div>
+
+                                            <div className="col-lg-4 col-sm-6 col-6">
+                                                <li className="dataupload-item">
+                                                <div className="dui-item">365<span>Day</span></div>
+                                                <div className="dui-item">₹60,000<span>Price</span></div>
+                                                <span className="clear-input-icon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="38" d="M368 368L144 144M368 144L144 368"/></svg>
+                                                </span>
+                                                </li>
+                                            </div>
+
+                                        </div>
+                                    </ol>
+                                </div>
+
+                                <div className="video-price-list-bx">
+                                    <div className="vplb-lable">Shop Visit Reels</div>
+                                    <ol className="dataupload-list">
+                                        <div className="row">
+
+                                            <div className="col-lg-4 col-sm-6 col-6">
+                                                <li className="dataupload-item">
+                                                <div className="dui-item">30<span>Day</span></div>
+                                                <div className="dui-item">₹5,000<span>Price</span></div>
+                                                <span className="clear-input-icon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="38" d="M368 368L144 144M368 144L144 368"/></svg>
+                                                </span>
+                                                </li>
+                                            </div>
+
+                                            <div className="col-lg-4 col-sm-6 col-6">
+                                                <li className="dataupload-item">
+                                                <div className="dui-item">60<span>Day</span></div>
+                                                <div className="dui-item">₹10,000<span>Price</span></div>
+                                                <span className="clear-input-icon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="38" d="M368 368L144 144M368 144L144 368"/></svg>
+                                                </span>
+                                                </li>
+                                            </div>
+
+                                            <div className="col-lg-4 col-sm-6 col-6">
+                                                <li className="dataupload-item">
+                                                <div className="dui-item">90<span>Day</span></div>
+                                                <div className="dui-item">₹15,000<span>Price</span></div>
+                                                <span className="clear-input-icon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="38" d="M368 368L144 144M368 144L144 368"/></svg>
+                                                </span>
+                                                </li>
+                                            </div>
+
+                                            <div className="col-lg-4 col-sm-6 col-6">
+                                                <li className="dataupload-item">
+                                                <div className="dui-item">180<span>Day</span></div>
+                                                <div className="dui-item">₹30,000<span>Price</span></div>
+                                                <span className="clear-input-icon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="38" d="M368 368L144 144M368 144L144 368"/></svg>
+                                                </span>
+                                                </li>
+                                            </div>
+
+                                            <div className="col-lg-4 col-sm-6 col-6">
+                                                <li className="dataupload-item">
+                                                <div className="dui-item">365<span>Day</span></div>
+                                                <div className="dui-item">₹60,000<span>Price</span></div>
+                                                <span className="clear-input-icon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="38" d="M368 368L144 144M368 144L144 368"/></svg>
+                                                </span>
+                                                </li>
+                                            </div>
+
+                                        </div>
+                                    </ol>
+                                </div>
+
+                                <div className="video-price-list-bx">
+                                    <div className="vplb-lable">Outdoor Reels</div>
+                                    <ol className="dataupload-list">
+                                        <div className="row">
+
+                                            <div className="col-lg-4 col-sm-6 col-6">
+                                                <li className="dataupload-item">
+                                                <div className="dui-item">30<span>Day</span></div>
+                                                <div className="dui-item">₹5,000<span>Price</span></div>
+                                                <span className="clear-input-icon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="38" d="M368 368L144 144M368 144L144 368"/></svg>
+                                                </span>
+                                                </li>
+                                            </div>
+
+                                            <div className="col-lg-4 col-sm-6 col-6">
+                                                <li className="dataupload-item">
+                                                <div className="dui-item">60<span>Day</span></div>
+                                                <div className="dui-item">₹10,000<span>Price</span></div>
+                                                <span className="clear-input-icon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="38" d="M368 368L144 144M368 144L144 368"/></svg>
+                                                </span>
+                                                </li>
+                                            </div>
+
+                                            <div className="col-lg-4 col-sm-6 col-6">
+                                                <li className="dataupload-item">
+                                                <div className="dui-item">90<span>Day</span></div>
+                                                <div className="dui-item">₹15,000<span>Price</span></div>
+                                                <span className="clear-input-icon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="38" d="M368 368L144 144M368 144L144 368"/></svg>
+                                                </span>
+                                                </li>
+                                            </div>
+
+                                            <div className="col-lg-4 col-sm-6 col-6">
+                                                <li className="dataupload-item">
+                                                <div className="dui-item">180<span>Day</span></div>
+                                                <div className="dui-item">₹30,000<span>Price</span></div>
+                                                <span className="clear-input-icon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="38" d="M368 368L144 144M368 144L144 368"/></svg>
+                                                </span>
+                                                </li>
+                                            </div>
+
+                                            <div className="col-lg-4 col-sm-6 col-6">
+                                                <li className="dataupload-item">
+                                                <div className="dui-item">365<span>Day</span></div>
+                                                <div className="dui-item">₹60,000<span>Price</span></div>
+                                                <span className="clear-input-icon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="38" d="M368 368L144 144M368 144L144 368"/></svg>
+                                                </span>
+                                                </li>
+                                            </div>
+
+                                        </div>
+                                    </ol>
+                                </div>
+
+                                <div className="video-price-list-bx">
+                                    <div className="vplb-lable">Photo Use</div>
+                                    <ol className="dataupload-list">
+                                        <div className="row">
+
+                                            <div className="col-lg-4 col-sm-6 col-6">
+                                                <li className="dataupload-item">
+                                                <div className="dui-item">30<span>Day</span></div>
+                                                <div className="dui-item">₹5,000<span>Price</span></div>
+                                                <span className="clear-input-icon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="38" d="M368 368L144 144M368 144L144 368"/></svg>
+                                                </span>
+                                                </li>
+                                            </div>
+
+                                            <div className="col-lg-4 col-sm-6 col-6">
+                                                <li className="dataupload-item">
+                                                <div className="dui-item">60<span>Day</span></div>
+                                                <div className="dui-item">₹10,000<span>Price</span></div>
+                                                <span className="clear-input-icon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="38" d="M368 368L144 144M368 144L144 368"/></svg>
+                                                </span>
+                                                </li>
+                                            </div>
+
+                                            <div className="col-lg-4 col-sm-6 col-6">
+                                                <li className="dataupload-item">
+                                                <div className="dui-item">90<span>Day</span></div>
+                                                <div className="dui-item">₹15,000<span>Price</span></div>
+                                                <span className="clear-input-icon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="38" d="M368 368L144 144M368 144L144 368"/></svg>
+                                                </span>
+                                                </li>
+                                            </div>
+
+                                            <div className="col-lg-4 col-sm-6 col-6">
+                                                <li className="dataupload-item">
+                                                <div className="dui-item">180<span>Day</span></div>
+                                                <div className="dui-item">₹30,000<span>Price</span></div>
+                                                <span className="clear-input-icon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="38" d="M368 368L144 144M368 144L144 368"/></svg>
+                                                </span>
+                                                </li>
+                                            </div>
+
+                                            <div className="col-lg-4 col-sm-6 col-6">
+                                                <li className="dataupload-item">
+                                                <div className="dui-item">365<span>Day</span></div>
+                                                <div className="dui-item">₹60,000<span>Price</span></div>
+                                                <span className="clear-input-icon">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="38" d="M368 368L144 144M368 144L144 368"/></svg>
+                                                </span>
+                                                </li>
+                                            </div>
+
+                                        </div>
+                                    </ol>
+                                </div>
+
+                                <div className="add-more-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="38" d="M368 368L144 144M368 144L144 368"/></svg>
+                                    Add More Price
+                                </div>
+
+                                <div className="row mx-0 portfolio-price-video">
+                                    
+                                    <div className="col-md-4 col-12">
+                                        <div className="signinup-group sgri">
+                                            <label className="group__label">Video type</label>
+                                            <select defaultValue="Selectvideotype">
+                                                <option value="Selectvideotype" disabled>Select Categorie</option>
+                                                <option value="Reels">Reels</option>
+                                                <option value="Shopvisitreels">Shop Visit Reels</option>
+                                                <option value="Outdoor">Outdoor</option>
+                                                <option value="Photouse">Photo Use</option>
+                                            </select>
+                                            <span className="down-icon"></span>
+                                        </div>
+                                    </div>
+                                    <div className="col-md-4 col-6">
+                                        <div className="signinup-group sgri">
+                                            <label className="group__label">Video Days</label>
+                                            <select defaultValue="Selectvideoday">
+                                                <option value="Selectvideoday" disabled>Select Days</option>
+                                                <option value="Day30">30 Day</option>
+                                                <option value="Day60">60 Day</option>
+                                                <option value="Day90">90 Day</option>
+                                                <option value="Day180">180 Day</option>
+                                                <option value="Day365">365 Day</option>
+                                            </select>
+                                            <span className="down-icon"></span>
+                                        </div>
+                                    </div>
+                                    <div className="col-md-4 col-6">
+                                        <div className="signinup-group sgli">
+                                            <label className="group__label">Price</label>
+                                            <input type="number" placeholder="Enter Price"/>
+                                            <span className="group_left_icon">₹</span>
+                                        </div>
+                                    </div>
+                                    <button disabled type="submit" className="common-submit-btn">Add Price</button>
+                                </div>
+                                
                                 <div className="nextprevious-bx">
                                     <button onClick={() => handlePortfolioScreenChange('videoreels')} type="button" className="nextprevious-btn"><i className="fa fa-angle-left" aria-hidden="true"></i>Previous</button>
-                                    <button type="button" className="nextprevious-btn">Continue<i className="fa fa-angle-right" aria-hidden="true"></i></button>
+                                    <button type="button" className="nextprevious-btn">Continue</button>
                                 </div>
                             </form>
                         </div>

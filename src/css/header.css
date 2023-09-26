@@ -505,11 +505,20 @@
 
 /* --- @media Css Start --- */
 @media screen and (min-width:768px) {
-    .ch-search-bx:hover .search-drop-bx{
+    /* .ch-search-bx:hover .search-drop-bx{
         visibility: visible;
     }
 
     .ch-search-bx:hover .search-drop-bx .search-drop-inner{
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0px);
+    } */
+    .ch-search-bx.active .search-drop-bx{
+        visibility: visible;
+    }
+
+    .ch-search-bx.active .search-drop-bx .search-drop-inner{
         opacity: 1;
         visibility: visible;
         transform: translateY(0px);

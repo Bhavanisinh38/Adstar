@@ -1,5 +1,5 @@
 import $ from 'jquery';
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import {Link} from "react-router-dom";
 
 // Images Common File
@@ -37,27 +37,45 @@ function Header() {
     const [searchValue, setsearchValue] = useState('');
     const [isShow, setisShow] = useState(true);
     const [isSearchActive, setisSearchActive] = useState(false);
+    const searchBoxRef = useRef(null);
 
-    // Function to handle the click event
+    useEffect(() => {
+      const handleClickOutside = (event) => {
+        if (searchBoxRef.current && !searchBoxRef.current.contains(event.target)) {
+          // Click occurred outside of the search box
+          setisSearchActive(false);
+          handleClearSearch();
+        }
+      };
+  
+      // Add a click event listener to the document
+      document.addEventListener('mousedown', handleClickOutside);
+  
+      // Clean up the event listener when the component unmounts
+      return () => {
+        document.removeEventListener('mousedown', handleClickOutside);
+      };
+    }, []);
+  
     const handleSearchActive = () => {
-      setisSearchActive(true); // Toggle the class
+      setisSearchActive(true);
     };
-
+  
     const handleSearchClose = () => {
-      setisSearchActive(false); // Toggle the class
+      setisSearchActive(false);
       handleClearSearch();
     };
-
+  
     const handleChangeSearch = (e) => {
       const newText = e.target.value;
       setsearchValue(newText);
       setisShow(newText === '');
-    }
-
+    };
+  
     const handleClearSearch = () => {
       setsearchValue('');
       setisShow(true);
-    }
+    };
     // --- --- //
 
     // --- Header Js Start --- //
@@ -98,7 +116,7 @@ function Header() {
             $("body").addClass("over-body");
         });
 
-        $(".trigger-closed, .overlaydiv, li > .smb-link").on("click", function (event) {
+        $(".trigger-closed, .overlaydiv, li > .smb-link, .smb-logo-link, .smb-login").on("click", function (event) {
           if (!$(this).hasClass("smb-link-not")) {
             $(".side-menu-bx").removeClass("active");
             $("body").removeClass("over-body");
@@ -174,7 +192,7 @@ function Header() {
 
           <div className="ch-right">
             {/* Search Input Start */}
-            <div className={`ch-search-bx ${isSearchActive ? 'active' : ''}`}>
+            <div className={`ch-search-bx ${isSearchActive ? 'active' : ''}`} ref={searchBoxRef}>
               <div className="csb-input" onClick={handleSearchActive}>
                 <input value={searchValue} onChange={handleChangeSearch} placeholder={words[placeholderText]} />
                 <i className="fa fa-search" aria-hidden="true"></i>

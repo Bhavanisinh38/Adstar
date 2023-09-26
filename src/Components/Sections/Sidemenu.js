@@ -69,7 +69,7 @@ function Sidemenu() {
                 </div>
 
                 <div className="smb-footer">
-                    <div className='smb-login'>Login</div>
+                    <Link to="/login" className='smb-login'>Login</Link>
                 </div>
 
             </aside>

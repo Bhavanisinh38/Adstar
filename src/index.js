@@ -16,6 +16,7 @@ import './css/gift.css';
 import './css/searchpage.css';
 import './css/detail.css';
 import './css/commonform.css'
+import './css/flashmessage.css'
 import './css/style.css';
 
 

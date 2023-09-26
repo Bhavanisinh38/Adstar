@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 
 // Design Files
 import ScrollToTop from './Components/Sections/ScrollToTop';
@@ -12,24 +12,51 @@ import Detail from './Components/Detail';
 import Login from './Components/Login';
 import Starlogin from './Components/Starlogin';
 import Starportfolio from "./Components/Starportfolio";
+import FlashMessage from "./Components/Sections/FlashMessage";
 
 function App() {
+  // Get the current location using react-router's useLocation hook
+  const location = useLocation();
+
+  // Define an array of paths where you want to hide the footer
+  const pathsToHideFooter = ['/search'];
+  
+  // Check if the current path is in the array of paths to hide the footer
+  const hideFooter = pathsToHideFooter.includes(location.pathname);
+
+  // -----
+  let footerClassName = '';
+
+  if (location.pathname === '/detail') {
+    footerClassName = 'footer-detail';
+  }
+  // ----- //
+
   return (
-    <BrowserRouter>
-      <ScrollToTop />
-      <Loader />
-      <Header />
-      <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/search" element={<Search />} />
-          <Route path="/detail" element={<Detail />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/starlogin" element={<Starlogin screenhed="as star" startfield="d-block" />} />
-          <Route path="/starportfolio" element={<Starportfolio />} />
-      </Routes>
-      <Footer />
-    </BrowserRouter>
+      <>
+        <ScrollToTop />
+        <Loader />
+        <Header />
+        <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/search" element={<Search />} />
+            <Route path="/detail" element={<Detail />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/starlogin" element={<Starlogin screenhed="as star" startfield="d-block" />} />
+            <Route path="/starportfolio" element={<Starportfolio />} />
+        </Routes>
+        <FlashMessage />
+        {!hideFooter && <Footer footertag={footerClassName} />}
+      </>
   );
 }
 
-export default App;
+function MainApp() {
+  return (
+    <Router>
+      <App />
+    </Router>
+  );
+}
+
+export default MainApp;

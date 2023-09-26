@@ -38,22 +38,22 @@ function Gifts() {
           <OwlCarousel className="mt-3" {...Giftsslider}>
               <div className="gifts-item">
                   <div className="gifts-lable">Under</div>
-                  <div className="gifts-data">$25</div>
+                  <div className="gifts-data">₹25</div>
               </div>
          
               <div className="gifts-item">
                   <div className="gifts-lable">Under</div>
-                  <div className="gifts-data">$50</div>
+                  <div className="gifts-data">₹50</div>
               </div>
          
               <div className="gifts-item">
                   <div className="gifts-lable">Under</div>
-                  <div className="gifts-data">$100</div>
+                  <div className="gifts-data">₹100</div>
               </div>
               
               <div className="gifts-item">
                   <div className="gifts-lable">Under</div>
-                  <div className="gifts-data">$150</div>
+                  <div className="gifts-data">₹150</div>
               </div>
           </OwlCarousel>
 

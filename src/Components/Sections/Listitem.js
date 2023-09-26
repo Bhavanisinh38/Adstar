@@ -48,7 +48,7 @@ function Listitem(props) {
           </div>
 
           <OwlCarousel className="mt-3" {...Listitemslider}>
-   
+            
             <div className="celebrity-item">
               <div>
                 <div className="celebrity-img-bx">
@@ -62,6 +62,9 @@ function Listitem(props) {
                   <div className="cft-item"><i className="fa fa-facebook"></i>1.5M</div>
                   <div className="cft-item"><i className="fa fa-instagram"></i>1.5M</div>
                   <div className="cft-item"><i className="fa fa-youtube-play"></i>1.5M</div>
+                </div>
+                <div className="celebrity-verified-tag">
+                  <img title="Verified Celebrity" src={Img.verified} alt="Verified Icon" />Verified
                 </div>
                 {/*
                 <div className="celebrity-tag">
@@ -244,6 +247,9 @@ function Listitem(props) {
                   <div className="cft-item"><i className="fa fa-facebook"></i>1.5M</div>
                   <div className="cft-item"><i className="fa fa-instagram"></i>1.5M</div>
                   <div className="cft-item"><i className="fa fa-youtube-play"></i>1.5M</div>
+                </div>
+                <div className="celebrity-verified-tag">
+                  <img title="Verified Celebrity" src={Img.verified} alt="Verified Icon" />Verified
                 </div>
                 {/*
                 <div className="celebrity-tag">

@@ -66,19 +66,25 @@ function Detail() {
                                         <img src={Img.demo_img1} alt="Celebrity Name" />
                                     </div>
                                     <div className="dpb-data-bx">
-                                        <div className="dpb-data-name">Ashley Parker Angel 
-                                            <div className="follow-btn d-none d-lg-inline-flex">Follow</div>
-                                            <div className="copy-url-btn  d-none d-lg-inline-flex" data-bs-toggle="modal" data-bs-target="#sharemodal">
-                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" aria-hidden="true"><path strokeLinecap="round" strokeLinejoin="round" d="M9 8.25H7.5a2.25 2.25 0 00-2.25 2.25v9a2.25 2.25 0 002.25 2.25h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25H15m0-3l-3-3m0 0l-3 3m3-3V15"></path></svg>
-                                                Share
-                                            </div>
-                                        </div>
+                                        <div className="dpb-data-name">Ashley Parker Angel</div>
                                         <div className="dpb-data-profession">Singer: O-Town - Actor</div>
+                                        <div className="dpb-data-verified"><img title="Verified Celebrity" src={Img.verified} alt="Verified Icon" />Verified</div>
                                         <div className="dpb-data-about">Teen heartthrob of ABC / MTV fame ✨ Actor & Singer || former member of boyband O-Town Broadway Star of HAIRSPRAY and WICKED the musical 🎭</div>
                                         <div className="dpb-data-tag">
                                             <div className="ct-item"><i className="fa fa-star" aria-hidden="true"></i>4.99<span>(334)</span></div>
                                             <div className="ct-item"><i className="fa fa-bolt" aria-hidden="true"></i>25hr</div>
                                             <div className="ct-item"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="20" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>Highly responsive</div>
+                                        </div>
+                                        <div className="dpb-data-btn">
+                                            <div className="follow-btn d-none d-lg-inline-flex">Follow</div>
+                                            <div className="copy-url-btn  d-none d-lg-inline-flex" data-bs-toggle="modal" data-bs-target="#sharemodal">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" aria-hidden="true"><path strokeLinecap="round" strokeLinejoin="round" d="M9 8.25H7.5a2.25 2.25 0 00-2.25 2.25v9a2.25 2.25 0 002.25 2.25h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25H15m0-3l-3-3m0 0l-3 3m3-3V15"></path></svg>
+                                                Share
+                                            </div>
+                                            <div className="favourite-tag details-fetg" data-title="add favourite">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" aria-hidden="true" height="20" width="20"><path strokeLinecap="round" strokeLinejoin="round" d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z"></path></svg>
+                                                Favourite
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -170,7 +176,7 @@ function Detail() {
 
             <div className="sectiongap"></div>
 
-            <Listitem/>
+            <Listitem pagetitle="Recent views"/>
 
             <div className="sectiongap"></div>
 

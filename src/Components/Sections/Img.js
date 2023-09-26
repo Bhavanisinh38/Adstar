@@ -9,6 +9,7 @@ import logo_white from '../../img/logo/logo-white.png'
 
 
 // Serach Page icons & other Icons
+import verified from '../../img/icons/verified.png'
 import user from '../../img/icons/user.jpg'
 import userm from '../../img/icons/userm.jpg'
 import sort from '../../img/icons/sort.svg'
@@ -16,6 +17,9 @@ import filter from '../../img/icons/filter.svg'
 import day from '../../img/icons/day.svg'
 import loading from '../../img/icons/loading.png'
 import video from '../../img/icons/video.png'
+import success from '../../img/icons/success.png'
+import error from '../../img/icons/error.png'
+import empty from '../../img/icons/empty.png'
 
 // Demo images
 import demo_img1 from '../../img/demo-img.jpg';
@@ -39,7 +43,7 @@ import Payment_icon5 from '../../img/icons/ApplePay.svg';
 export { 
     icon_color, icon_black, icon_white,
     logo_color, logo_white,
-    user, userm, sort, filter, day, loading, video,
+    verified, user, userm, sort, filter, day, loading, video, success, error, empty,
     demo_img1, demo_img2, 
     demo_video, demo_video2, demo_video3, 
     patent1,

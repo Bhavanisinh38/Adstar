@@ -4,10 +4,10 @@ import {Link} from "react-router-dom";
 // Images Common File
 // import * as Img from './Img';
 
-function Footer() {
+function Footer(props) {
     return (
     <>
-    <footer className="pt-5 mt-5">
+    <footer className={`pt-5 mt-5 ${props.footertag}`}>
         <div className="container-lg cl-custom">
             <div className="row">
                 <div className="col-md-6">
@@ -112,6 +112,40 @@ function Footer() {
                             </span>
                             <div className='ssi-lable'>Copy Link</div>
                         </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {/* Full Review Popup */}
+    <div className="modal fade zoom" id="fullreview" tabndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div className="modal-dialog modal-dialog-centered">
+            <div className="modal-content custom-content">
+                <div className="custom-modal-header p-0">
+                    {/* <div className="cmh-lable">Share vai</div> */}
+                    <span className="close-icon" data-bs-dismiss="modal" aria-label="Close">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="32" d="M368 368L144 144M368 144L144 368"></path>
+                        </svg>
+                    </span>
+                </div>
+                <div className="custom-modal-data">
+                    <div className="all-reviews-item ari-single">
+                        <div className='ari-snd'>
+                            <div className="ari-snd-lable">Mr. Chandler Haag</div>
+                            <div className="ari-snd-star">
+                                <i className="fa fa-star active" aria-hidden="true"></i>
+                                <i className="fa fa-star active" aria-hidden="true"></i>
+                                <i className="fa fa-star active" aria-hidden="true"></i>
+                                <i className="fa fa-star active" aria-hidden="true"></i>
+                                <i className="fa fa-star active" aria-hidden="true"></i>
+                            </div>
+                            <div className="ari-snd-date">August 6th, 2023 <br/> Birthday</div>
+                        </div>
+                        <div className='ari-data'>
+                            Doloremque earum reiciendis voluptas voluptatem fugit. Illum magnam hic odit eos blanditiis. Natus adipisci commodi quia provident aut.
+                        </div>
                     </div>
                 </div>
             </div>

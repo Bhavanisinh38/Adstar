@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import {Link} from "react-router-dom";
 
 import * as Img from './Sections/Img';
 
@@ -40,6 +41,15 @@ function Search() {
 
                 <div className="row spage-r-list-row">
                     
+                    <div className="col-12">
+                        <div className="empty-div-bx">
+                            <img className="empty-img" src={Img.empty} alt="Data is not available" />
+                            <div className="empty-heading">No results 🥺</div>
+                            <div className="empty-sub-heading">Try adjusting your filters to get more results.</div>
+                            <Link to="/" className="empty-btn">Back to Home</Link>
+                        </div>
+                    </div>
+
                     <div className="col-lg-3 col-md-4 col-sm-6 col-6 mt-4">
                         <div className="celebrity-item ci-two">
                             <div>
@@ -47,7 +57,7 @@ function Search() {
                                     <img className="celebrity-img" src={Img.demo_img2} alt="Celebrity Name" />
                                 </div>
 
-                                <div className="favourite-tag">
+                                <div className="favourite-tag" data-title="add favourite">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" aria-hidden="true" height="20" width="20"><path strokeLinecap="round" strokeLinejoin="round" d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z"></path></svg>
                                 </div>
 
@@ -66,6 +76,9 @@ function Search() {
                                 </div> 
                                 */}
                                 <div className="celebrity-price">₹1,00,000<span>/Video</span></div>
+                                <div className="celebrity-verified-tag">
+                                    <img title="Verified Celebrity" src={Img.verified} alt="Verified Icon" />Verified
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -77,7 +90,7 @@ function Search() {
                                     <img className="celebrity-img" src={Img.demo_img2} alt="Celebrity Name" />
                                 </div>
 
-                                <div className="favourite-tag active">
+                                <div className="favourite-tag active" data-title="remove favourite">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" aria-hidden="true" height="20" width="20"><path strokeLinecap="round" strokeLinejoin="round" d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z"></path></svg>
                                 </div>
 
@@ -107,7 +120,7 @@ function Search() {
                                     <img className="celebrity-img" src={Img.demo_img2} alt="Celebrity Name" />
                                 </div>
 
-                                <div className="favourite-tag">
+                                <div className="favourite-tag" data-title="add favourite">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" aria-hidden="true" height="20" width="20"><path strokeLinecap="round" strokeLinejoin="round" d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z"></path></svg>
                                 </div>
 
@@ -137,7 +150,7 @@ function Search() {
                                     <img className="celebrity-img" src={Img.demo_img2} alt="Celebrity Name" />
                                 </div>
 
-                                <div className="favourite-tag">
+                                <div className="favourite-tag" data-title="add favourite">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" aria-hidden="true" height="20" width="20"><path strokeLinecap="round" strokeLinejoin="round" d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z"></path></svg>
                                 </div>
 
@@ -167,7 +180,7 @@ function Search() {
                                     <img className="celebrity-img" src={Img.demo_img2} alt="Celebrity Name" />
                                 </div>
 
-                                <div className="favourite-tag">
+                                <div className="favourite-tag" data-title="add favourite">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" aria-hidden="true" height="20" width="20"><path strokeLinecap="round" strokeLinejoin="round" d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z"></path></svg>
                                 </div>
 
@@ -197,7 +210,7 @@ function Search() {
                                     <img className="celebrity-img" src={Img.demo_img2} alt="Celebrity Name" />
                                 </div>
 
-                                <div className="favourite-tag">
+                                <div className="favourite-tag" data-title="add favourite">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" aria-hidden="true" height="20" width="20"><path strokeLinecap="round" strokeLinejoin="round" d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z"></path></svg>
                                 </div>
 
@@ -227,7 +240,7 @@ function Search() {
                                     <img className="celebrity-img" src={Img.demo_img2} alt="Celebrity Name" />
                                 </div>
 
-                                <div className="favourite-tag">
+                                <div className="favourite-tag" data-title="add favourite">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" aria-hidden="true" height="20" width="20"><path strokeLinecap="round" strokeLinejoin="round" d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z"></path></svg>
                                 </div>
 
@@ -257,7 +270,7 @@ function Search() {
                                     <img className="celebrity-img" src={Img.demo_img2} alt="Celebrity Name" />
                                 </div>
 
-                                <div className="favourite-tag">
+                                <div className="favourite-tag" data-title="add favourite">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" aria-hidden="true" height="20" width="20"><path strokeLinecap="round" strokeLinejoin="round" d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z"></path></svg>
                                 </div>
 
@@ -287,7 +300,7 @@ function Search() {
                                     <img className="celebrity-img" src={Img.demo_img2} alt="Celebrity Name" />
                                 </div>
 
-                                <div className="favourite-tag">
+                                <div className="favourite-tag" data-title="add favourite">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" aria-hidden="true" height="20" width="20"><path strokeLinecap="round" strokeLinejoin="round" d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z"></path></svg>
                                 </div>
 
@@ -317,7 +330,7 @@ function Search() {
                                     <img className="celebrity-img" src={Img.demo_img2} alt="Celebrity Name" />
                                 </div>
 
-                                <div className="favourite-tag">
+                                <div className="favourite-tag" data-title="add favourite">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" aria-hidden="true" height="20" width="20"><path strokeLinecap="round" strokeLinejoin="round" d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z"></path></svg>
                                 </div>
 
@@ -339,7 +352,7 @@ function Search() {
                             </div>
                         </div>
                     </div>
-
+           
                 </div>
 
                 <div className="pagination-bx">
@@ -419,16 +432,16 @@ function Search() {
                             <div className="acc-detail">
                                 <div className="checkbox-group full-width-cb check-square">
                                     <input type="checkbox" id="pr-cb1"/>
-                                    <label htmlFor="pr-cb1"><span className="check-icon"></span>$0 to $100 <span className="num-tag">02</span> </label>
+                                    <label htmlFor="pr-cb1"><span className="check-icon"></span>₹0 to ₹100 <span className="num-tag">02</span> </label>
 
                                     <input type="checkbox" id="pr-cb2"/>
-                                    <label htmlFor="pr-cb2"><span className="check-icon"></span>$100 to $200 <span className="num-tag">02</span></label>
+                                    <label htmlFor="pr-cb2"><span className="check-icon"></span>₹100 to ₹200 <span className="num-tag">02</span></label>
 
                                     <input type="checkbox" id="pr-cb3"/>
-                                    <label htmlFor="pr-cb3"><span className="check-icon"></span>$200 to $300 <span className="num-tag">02</span></label>
+                                    <label htmlFor="pr-cb3"><span className="check-icon"></span>₹200 to ₹300 <span className="num-tag">02</span></label>
 
                                     <input type="checkbox" id="pr-cb4"/>
-                                    <label htmlFor="pr-cb4"><span className="check-icon"></span>$300+ <span className="num-tag">02</span></label>
+                                    <label htmlFor="pr-cb4"><span className="check-icon"></span>₹300+ <span className="num-tag">02</span></label>
                                 </div>
                             </div>
                         </div>

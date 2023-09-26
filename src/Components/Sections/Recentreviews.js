@@ -51,6 +51,7 @@ function Recentreviews(props) {
                     </div>
                     <div className={`reviews-date ${props.rdc}`}>August 6th, 2023 • Birthday</div>
                     <div className="reviews-data">We cannot thank you enough! Sophie was beyond thrilled to get your message and it really helped her get through a little bit of missing home!</div>
+                    <div className="reviews-btn"  data-bs-toggle="modal" data-bs-target="#fullreview">View More <i className="fa fa-angle-right"></i></div>
                 </div>
                 <div className="reviews-section">
                     <div className="reviews-star-name">
@@ -64,6 +65,7 @@ function Recentreviews(props) {
                     </div>
                     <div className={`reviews-date ${props.rdc}`}>August 6th, 2023 • Birthday</div>
                     <div className="reviews-data">We cannot thank you enough! Sophie was beyond thrilled to get your message and it really helped her get through a little bit of missing home!</div>
+                    <div className="reviews-btn"  data-bs-toggle="modal" data-bs-target="#fullreview">View More <i className="fa fa-angle-right"></i></div>
                 </div>
                 <div className="reviews-section">
                     <div className="reviews-star-name">
@@ -77,6 +79,7 @@ function Recentreviews(props) {
                     </div>
                     <div className={`reviews-date ${props.rdc}`}>August 6th, 2023 • Birthday</div>
                     <div className="reviews-data">We cannot thank you enough! Sophie was beyond thrilled to get your message and it really helped her get through a little bit of missing home!</div>
+                    <div className="reviews-btn"  data-bs-toggle="modal" data-bs-target="#fullreview">View More <i className="fa fa-angle-right"></i></div>
                 </div>
                 <div className="reviews-section">
                     <div className="reviews-star-name">
@@ -90,6 +93,7 @@ function Recentreviews(props) {
                     </div>
                     <div className={`reviews-date ${props.rdc}`}>August 6th, 2023 • Birthday</div>
                     <div className="reviews-data">We cannot thank you enough! Sophie was beyond thrilled to get your message and it really helped her get through a little bit of missing home!</div>
+                    <div className="reviews-btn"  data-bs-toggle="modal" data-bs-target="#fullreview">View More <i className="fa fa-angle-right"></i></div>
                 </div>
                 <div className="reviews-section">
                     <div className="reviews-star-name">
@@ -103,6 +107,7 @@ function Recentreviews(props) {
                     </div>
                     <div className={`reviews-date ${props.rdc}`}>August 6th, 2023 • Birthday</div>
                     <div className="reviews-data">We cannot thank you enough! Sophie was beyond thrilled to get your message and it really helped her get through a little bit of missing home!</div>
+                    <div className="reviews-btn"  data-bs-toggle="modal" data-bs-target="#fullreview">View More <i className="fa fa-angle-right"></i></div>
                 </div>
             </OwlCarousel>
         </div>

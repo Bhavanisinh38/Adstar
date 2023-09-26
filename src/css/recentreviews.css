@@ -44,6 +44,30 @@
     font-size: 14px;
     font-weight: 400;
     font-style: italic;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+.reviews-section .reviews-btn{
+    color: rgb(191, 186, 196);
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+}
+
+.reviews-section .reviews-btn:hover{
+    color: #ff942d;
+}
+
+.reviews-section .reviews-btn .fa{
+    font-size: 15px;
+    position: relative;
+    top: 1px;
 }
 
 /* --- All eviews Popup --- */
@@ -108,8 +132,30 @@
     font-weight: 400;
 }
 
+/* --- Full Review Popup --- */
+
+.all-reviews-item.ari-single{
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.all-reviews-item.ari-single .ari-snd .ari-snd-date br{
+    display: none;
+}
+
+.all-reviews-item.ari-single .ari-data{
+    margin-top: 5px;
+}
+
+
 @media screen and (max-width: 576px) {
     .all-reviews-item{
         flex-direction: column;
+    }
+    
+    .all-reviews-item .ari-data{
+        margin-top: 10px;
     }
 }
