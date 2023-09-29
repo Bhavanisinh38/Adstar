@@ -90,6 +90,7 @@
 /* ---
 Screen heading
 --- */
+.bmd-hed,
 .psc-hed,
 .screen-hed {
     color: #f2f1f3;
@@ -98,6 +99,7 @@ Screen heading
     margin-bottom: 15px;
 }
 
+.bmd-pera,
 .psc-pera,
 .screen-pera {
     color: rgb(191, 186, 196);
@@ -546,6 +548,10 @@ input[type=number] {
     min-height: 80px;
 }
 
+.signinup-group.sg-150-textarea textarea{
+    min-height: 150px;
+}
+
 .signinup-group .group__label {
     font-size: 14px;
     color: #f2f1f3;
@@ -647,8 +653,8 @@ input[type=number] {
 }
 
 .signinup-group-radio label:hover {
-    background-color: white;
-    color: #8036e0;
+    background-color: rgb(37, 26, 51);
+    color: #ffffff;
     border-color: #8036e0;
 }
 
@@ -742,28 +748,55 @@ Error Input color css
 }
 
 /* --- Remember Input Checkbox --- */
-.remember-input {
-    cursor: pointer;
-    display: inline-block !important;
-    width: 15px !important;
-    height: 15px;
-    position: relative;
-    top: 0px;
+.signinup-group-checkmark{
+    margin: 15px 0 20px;
+    width: fit-content;
 }
 
-.remember-lable {
-    cursor: pointer;
+.signinup-group-checkmark label{
     font-size: 14px;
-    color: #1c2b33;
-    position: relative;
-    bottom: 2.5px;
-    font-weight: 600;
-    opacity: 0.8;
+    color: #f2f1f3;
+    font-weight: 400;
+    margin: 0;
+    margin-left: 8px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
 }
 
-.remember-lable:hover {
-    opacity: 1;
+.signinup-group-checkmark label .checkmark-icon{
+    width: 25px;
+    height: 25px;
+    flex: 0 0 25px;
+    border-radius: 5px;
+    margin-right: 8px;
+    background-color: transparent;
+    background-position: center;
+    box-shadow: 0 0 0px 4px rgb(63 59 69 / 0%) inset;
+    border: 2px solid rgb(63, 59, 69);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
 }
+
+.signinup-group-checkmark label:hover .checkmark-icon{
+    border-color: #8036e0;
+}
+
+.signinup-group-checkmark input{
+    display: none;
+}
+
+.signinup-group-checkmark input:checked + label .checkmark-icon {
+    background-image: url(../img/icons/check.svg);
+    border-color: #8036e0;
+    background-color: #8036e0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 90%;
+    box-shadow: none;
+}
+
+
 
 /* --- Input Autofill Css --- */
 .signinup-group input:-webkit-autofill,
@@ -975,12 +1008,13 @@ Error Input color css
     padding-top: 15px;
 }
 
+.selections-btn,
 .resend-otp-btn,
 .login-commun-btn {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px 15px;
+    padding: 10px 5px;
     border-radius: 50px;
     width: 100%;
     font-weight: 400;
@@ -992,6 +1026,12 @@ Error Input color css
     position: relative;
     cursor: pointer;
     transition: all 0.3s ease-in-out ;
+}
+
+.selections-btn{
+    padding: 8px 5px;
+    background-color: transparent;
+    margin-bottom: 20px;
 }
 
 .resend-otp-btn[disabled]{
@@ -1009,6 +1049,18 @@ Error Input color css
     background-color: white;
     border-color: white;
     color: #8036e0;
+}
+
+.selections-btn:hover {
+    background-color: rgb(37, 26, 51);
+    color: #ffffff;
+    border-color: #8036e0;
+}
+
+.selections-btn.active {
+    border-color: #8036e0;
+    background-color: #8036e0;
+    color: white;
 }
 
 .login-commun-btn svg{
@@ -1032,7 +1084,6 @@ Error Input color css
 }
 
 /* --- Add More Btn --- */
-
 .add-more-btn{
     position: relative;
     background-color: rgb(32, 30, 35);
@@ -1130,6 +1181,81 @@ Error Input color css
     border-bottom: 1px solid rgb(63, 59, 69);
 }
 
+/* --- Booking Page --- */
+
+.booking-main-div{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.booking-main-div .bmd-left{
+    flex: 0 1 700px;
+    max-width: 700px;
+    width: 100%;
+}
+
+.booking-main-div .bmd-right{
+    flex: 0 0 340px;
+    width: 340px;
+    padding-left: 25px;
+}
+
+.row.occasion-row{
+    display: flex;
+    align-items: flex-start;
+}
+
+.signinup-group-radio.sgr-occasion label{
+    display: flex;
+    flex-direction: column;
+    border: none;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    margin: auto;
+    font-weight: 400;
+    font-size: 14px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.signinup-group-radio.sgr-occasion input:checked +  label{
+    background-color: transparent;
+}
+
+.signinup-group-radio.sgr-occasion label .occasion-icon{
+    width: 65px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(63, 59, 69);
+    border-radius: 50%;
+    margin-bottom: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.signinup-group-radio.sgr-occasion label .occasion-icon img,
+.signinup-group-radio.sgr-occasion label .occasion-icon svg{
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+    object-position: center;
+}
+
+.signinup-group-radio.sgr-occasion label:hover .occasion-icon{
+    background-color: rgb(37, 26, 51);
+    color: #ffffff;
+    border-color: #8036e0;
+}
+
+.signinup-group-radio.sgr-occasion input:checked +  label .occasion-icon{
+    border-color: #8036e0;
+    background-color: #8036e0;
+    color: white;
+}
+
 
 @media screen and (max-width:768px) {
     .progress-bx{
@@ -1169,6 +1295,21 @@ Error Input color css
     .dataupload-list .col-6:nth-child(even){
         padding-left: 5px;
     }
+
+    .booking-main-div{
+        flex-direction: column;
+    }
+    
+    .booking-main-div .bmd-right,
+    .booking-main-div .bmd-left{
+        flex: 0 1 100%;
+        max-width: 100%;
+    }
+    
+    .booking-main-div .bmd-right{
+        padding-left: 0px;
+        width: 100%;
+    }
 }
 
 @media screen and (max-width:576px) {
@@ -1190,6 +1331,11 @@ Error Input color css
 
     .screen-hed{
         font-size: 22px;
+    }
+
+    .signinup-group-radio label{
+        font-size: 12px;
+        padding: 5px 8px;
     }
 
 }

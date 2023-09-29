@@ -49,7 +49,7 @@ function Detail() {
             <div className='breadcrumb-outer'>
                 <div className='container-lg cl-custom'>   
                     <div className='breadcrumb-bx'>
-                        <Link className='breadcrumb-link breadcrumb-back' to="/">Home<i className="fa fa-angle-right" aria-hidden="true"></i></Link>
+                        <Link className='breadcrumb-link' to="/">Home<i className="fa fa-angle-right" aria-hidden="true"></i></Link>
                         <Link className='breadcrumb-link' to="/search">Categories<i className="fa fa-angle-right" aria-hidden="true"></i></Link>
                         <Link className='breadcrumb-link breadcrumb-active'>Celebrity Name</Link>
                     </div>

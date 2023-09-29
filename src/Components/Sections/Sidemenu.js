@@ -51,7 +51,7 @@ function Sidemenu() {
                         <li><Link to="/search" className="smb-link">For kids</Link></li>
                         <li><Link to="/detail" className="smb-link">For business</Link></li>
                         <li><Link to="/starportfolio" className="smb-link">How it works</Link></li>
-                        <li><Link to="/search" className="smb-link">Join as talent</Link></li>
+                        <li><Link to="/book" className="smb-link">Join as talent</Link></li>
                     </ul>
                 </div>
 

@@ -185,7 +185,7 @@ function Header() {
             <Link to="/search" className="cmb-item">For kids</Link>
             <Link to="/detail" className="cmb-item">For business</Link>
             <Link to="/starportfolio" className="cmb-item">How it works</Link>
-            <Link to="/search" className="cmb-item">Join as talent</Link>
+            <Link to="/book" className="cmb-item">Join as talent</Link>
           </div>
           {/* Website Categories Menu End */}
 
