@@ -156,12 +156,12 @@ function Header() {
               <div className="cmb-drop-bx">
                 <div className="cmb-drop-inner">
                   <div className="cdi-main">
-                    <div className="cdi-main-item active">Actors</div>
-                    <div className="cdi-main-item">Athletes</div>
-                    <div className="cdi-main-item">Comedians</div>
-                    <div className="cdi-main-item">Creators</div>
-                    <div className="cdi-main-item">Musicians</div>
-                    <div className="cdi-main-item">Reality TV</div>
+                    <Link to="/search" className="cdi-main-item active">Actors</Link>
+                    <Link to="/search" className="cdi-main-item">Athletes</Link>
+                    <Link to="/search" className="cdi-main-item">Comedians</Link>
+                    <Link to="/search" className="cdi-main-item">Creators</Link>
+                    <Link to="/search" className="cdi-main-item">Musicians</Link>
+                    <Link to="/search" className="cdi-main-item">Reality TV</Link>
                   </div>
                   <div className="cdi-main-sub">
                       <div className="cdi-main-item">Actors</div>
@@ -182,10 +182,10 @@ function Header() {
 
             </div>
 
-            <Link to="/search" className="cmb-item">For kids</Link>
-            <Link to="/detail" className="cmb-item">For business</Link>
-            <Link to="/starportfolio" className="cmb-item">How it works</Link>
-            <Link to="/book" className="cmb-item">Join as talent</Link>
+            <div className="cmb-item">For kids</div>
+            <div className="cmb-item">For business</div>
+            <div className="cmb-item">How it works</div>
+            <Link to="/starlogin" className="cmb-item">Join as star</Link>
           </div>
           {/* Website Categories Menu End */}
 

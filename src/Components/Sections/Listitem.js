@@ -1,4 +1,6 @@
 import React from 'react';
+import {Link} from "react-router-dom";
+
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
@@ -49,7 +51,7 @@ function Listitem(props) {
 
           <OwlCarousel className="mt-3" {...Listitemslider}>
             
-            <div className="celebrity-item">
+            <Link to="/detail" className="celebrity-item">
               <div>
                 <div className="celebrity-img-bx">
                   <img className="celebrity-img" src={Img.demo_img2} alt="Celebrity Name" />
@@ -76,9 +78,9 @@ function Listitem(props) {
                 </div> 
                 */}
               </div>
-            </div>
+            </Link>
 
-            <div className="celebrity-item">
+            <Link to="/detail" className="celebrity-item">
               <div>
                 <div className="celebrity-img-bx">
                   <img className="celebrity-img" src={Img.demo_img2} alt="Celebrity Name" />
@@ -102,9 +104,9 @@ function Listitem(props) {
                 </div> 
                 */}
               </div>
-            </div>
+            </Link>
 
-            <div className="celebrity-item">
+            <Link to="/detail" className="celebrity-item">
               <div>
                 <div className="celebrity-img-bx">
                   <img className="celebrity-img" src={Img.demo_img2} alt="Celebrity Name" />
@@ -128,9 +130,9 @@ function Listitem(props) {
                 </div> 
                 */}
               </div>
-            </div>
+            </Link>
 
-            <div className="celebrity-item">
+            <Link to="/detail" className="celebrity-item">
               <div>
                 <div className="celebrity-img-bx">
                   <img className="celebrity-img" src={Img.demo_img2} alt="Celebrity Name" />
@@ -154,9 +156,9 @@ function Listitem(props) {
                 </div> 
                 */}
               </div>
-            </div>
+            </Link>
 
-            <div className="celebrity-item">
+            <Link to="/detail" className="celebrity-item">
               <div>
                 <div className="celebrity-img-bx">
                   <img className="celebrity-img" src={Img.demo_img2} alt="Celebrity Name" />
@@ -180,9 +182,9 @@ function Listitem(props) {
                 </div> 
                 */}
               </div>
-            </div>
+            </Link>
 
-            <div className="celebrity-item">
+            <Link to="/detail" className="celebrity-item">
               <div>
                 <div className="celebrity-img-bx">
                   <img className="celebrity-img" src={Img.demo_img2} alt="Celebrity Name" />
@@ -206,9 +208,9 @@ function Listitem(props) {
                 </div> 
                 */}
               </div>
-            </div>
+            </Link>
 
-            <div className="celebrity-item">
+            <Link to="/detail" className="celebrity-item">
               <div>
                 <div className="celebrity-img-bx">
                   <img className="celebrity-img" src={Img.demo_img2} alt="Celebrity Name" />
@@ -232,9 +234,9 @@ function Listitem(props) {
                 </div> 
                 */}
               </div>
-            </div>
+            </Link>
 
-            <div className="celebrity-item">
+            <Link to="/detail" className="celebrity-item">
               <div>
                 <div className="celebrity-img-bx">
                   <img className="celebrity-img" src={Img.demo_img2} alt="Celebrity Name" />
@@ -261,7 +263,7 @@ function Listitem(props) {
                 </div> 
                 */}
               </div>
-            </div>
+            </Link>
 
           </OwlCarousel>
 

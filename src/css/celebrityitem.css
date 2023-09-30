@@ -1,6 +1,7 @@
 /* --- Celebrity Item --- */
 .celebrity-item{
     cursor: pointer;
+    display: block;
 }
 
 .celebrity-item .celebrity-img-bx{

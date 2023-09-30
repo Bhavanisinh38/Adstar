@@ -48,10 +48,10 @@ function Sidemenu() {
                                 <div className="smb-link">Reality TV<i className="fa fa-angle-right" aria-hidden="true"></i></div>
                             </div>
                         </li>
-                        <li><Link to="/search" className="smb-link">For kids</Link></li>
-                        <li><Link to="/detail" className="smb-link">For business</Link></li>
-                        <li><Link to="/starportfolio" className="smb-link">How it works</Link></li>
-                        <li><Link to="/book" className="smb-link">Join as talent</Link></li>
+                        <li><div className="smb-link">For kids</div></li>
+                        <li><div className="smb-link">For business</div></li>
+                        <li><div className="smb-link">How it works</div></li>
+                        <li><Link to="/starlogin" className="smb-link">Join as talent</Link></li>
                     </ul>
                 </div>
 

@@ -89,10 +89,10 @@ function Detail() {
                                     </div>
                                 </div>
                                 <div className="dmb-book-btns d-block d-lg-none mt-4">
-                                    <div className="dbb-btn video-book-btn">Book a personal video ₹2,493</div>
+                                    <Link to="/book" className="dbb-btn video-book-btn">Book a personal video ₹2,493</Link>
                                     <div className="row">
                                         <div className="col-md-4 pe-md-1">
-                                            <div className="dbb-btn">Message ₹913</div>
+                                            <Link to="/book" className="dbb-btn">Message ₹913</Link>
                                         </div>
                                         <div className="col-md-4 col-6 ps-md-1 pe-sm-1">
                                             <div className="dbb-btn">Follow</div>
@@ -134,8 +134,8 @@ function Detail() {
                         <aside className="dmb-left">
                             <div className="dmb-left-inner">
                                 <div className={`dmb-book-btns dmb-left-btns ${isFixedBtn ? 'active' : ''}`}>
-                                    <div className="dbb-btn video-book-btn">Book a personal video ₹2,493</div>
-                                    <div className="dbb-btn">Message ₹913</div>
+                                    <Link to="/book" className="dbb-btn video-book-btn">Book a personal video ₹2,493</Link>
+                                    <Link to="/book" className="dbb-btn">Message ₹913</Link>
                                     <div className="secure-note-btn" onClick={handleSecureNote}>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="transparent" stroke="#F2F1F3" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
                                         Secure payments & money back guarantee

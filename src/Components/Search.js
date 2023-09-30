@@ -51,7 +51,7 @@ function Search() {
                     </div>
 
                     <div className="col-lg-3 col-md-4 col-sm-6 col-6 mt-4">
-                        <div className="celebrity-item ci-two">
+                        <Link to="/detail" className="celebrity-item ci-two">
                             <div>
                                 <div className="celebrity-img-bx">
                                     <img className="celebrity-img" src={Img.demo_img2} alt="Celebrity Name" />
@@ -80,11 +80,11 @@ function Search() {
                                     <img title="Verified Celebrity" src={Img.verified} alt="Verified Icon" />Verified
                                 </div>
                             </div>
-                        </div>
+                        </Link>
                     </div>
                     
                     <div className="col-lg-3 col-md-4 col-sm-6 col-6 mt-4">
-                        <div className="celebrity-item ci-two">
+                        <Link to="/detail" className="celebrity-item ci-two">
                             <div>
                                 <div className="celebrity-img-bx">
                                     <img className="celebrity-img" src={Img.demo_img2} alt="Celebrity Name" />
@@ -110,11 +110,11 @@ function Search() {
                                 */}
                                 <div className="celebrity-price">₹1,00,000<span>/Video</span></div>
                             </div>
-                        </div>
+                        </Link>
                     </div>
                       
                     <div className="col-lg-3 col-md-4 col-sm-6 col-6 mt-4">
-                        <div className="celebrity-item ci-two">
+                        <Link to="/detail" className="celebrity-item ci-two">
                             <div>
                                 <div className="celebrity-img-bx">
                                     <img className="celebrity-img" src={Img.demo_img2} alt="Celebrity Name" />
@@ -140,11 +140,11 @@ function Search() {
                                 */}
                                 <div className="celebrity-price">₹1,00,000<span>/Video</span></div>
                             </div>
-                        </div>
+                        </Link>
                     </div>
                       
                     <div className="col-lg-3 col-md-4 col-sm-6 col-6 mt-4">
-                        <div className="celebrity-item ci-two">
+                        <Link to="/detail" className="celebrity-item ci-two">
                             <div>
                                 <div className="celebrity-img-bx">
                                     <img className="celebrity-img" src={Img.demo_img2} alt="Celebrity Name" />
@@ -170,11 +170,11 @@ function Search() {
                                 */}
                                 <div className="celebrity-price">₹1,00,000<span>/Video</span></div>
                             </div>
-                        </div>
+                        </Link>
                     </div>
                       
                     <div className="col-lg-3 col-md-4 col-sm-6 col-6 mt-4">
-                        <div className="celebrity-item ci-two">
+                        <Link to="/detail" className="celebrity-item ci-two">
                             <div>
                                 <div className="celebrity-img-bx">
                                     <img className="celebrity-img" src={Img.demo_img2} alt="Celebrity Name" />
@@ -200,11 +200,11 @@ function Search() {
                                 */}
                                 <div className="celebrity-price">₹1,00,000<span>/Video</span></div>
                             </div>
-                        </div>
+                        </Link>
                     </div>
                       
                     <div className="col-lg-3 col-md-4 col-sm-6 col-6 mt-4">
-                        <div className="celebrity-item ci-two">
+                        <Link to="/detail" className="celebrity-item ci-two">
                             <div>
                                 <div className="celebrity-img-bx">
                                     <img className="celebrity-img" src={Img.demo_img2} alt="Celebrity Name" />
@@ -230,11 +230,11 @@ function Search() {
                                 */}
                                 <div className="celebrity-price">₹1,00,000<span>/Video</span></div>
                             </div>
-                        </div>
+                        </Link>
                     </div>
                       
                     <div className="col-lg-3 col-md-4 col-sm-6 col-6 mt-4">
-                        <div className="celebrity-item ci-two">
+                        <Link to="/detail" className="celebrity-item ci-two">
                             <div>
                                 <div className="celebrity-img-bx">
                                     <img className="celebrity-img" src={Img.demo_img2} alt="Celebrity Name" />
@@ -260,11 +260,11 @@ function Search() {
                                 */}
                                 <div className="celebrity-price">₹1,00,000<span>/Video</span></div>
                             </div>
-                        </div>
+                        </Link>
                     </div>
                       
                     <div className="col-lg-3 col-md-4 col-sm-6 col-6 mt-4">
-                        <div className="celebrity-item ci-two">
+                        <Link to="/detail" className="celebrity-item ci-two">
                             <div>
                                 <div className="celebrity-img-bx">
                                     <img className="celebrity-img" src={Img.demo_img2} alt="Celebrity Name" />
@@ -290,11 +290,11 @@ function Search() {
                                 */}
                                 <div className="celebrity-price">₹1,00,000<span>/Video</span></div>
                             </div>
-                        </div>
+                        </Link>
                     </div>
                       
                     <div className="col-lg-3 col-md-4 col-sm-6 col-6 mt-4">
-                        <div className="celebrity-item ci-two">
+                        <Link to="/detail" className="celebrity-item ci-two">
                             <div>
                                 <div className="celebrity-img-bx">
                                     <img className="celebrity-img" src={Img.demo_img2} alt="Celebrity Name" />
@@ -320,11 +320,11 @@ function Search() {
                                 */}
                                 <div className="celebrity-price">₹1,00,000<span>/Video</span></div>
                             </div>
-                        </div>
+                        </Link>
                     </div>
                       
                     <div className="col-lg-3 col-md-4 col-sm-6 col-6 mt-4">
-                        <div className="celebrity-item ci-two">
+                        <Link to="/detail"className="celebrity-item ci-two">
                             <div>
                                 <div className="celebrity-img-bx">
                                     <img className="celebrity-img" src={Img.demo_img2} alt="Celebrity Name" />
@@ -350,7 +350,7 @@ function Search() {
                                 */}
                                 <div className="celebrity-price">₹1,00,000<span>/Video</span></div>
                             </div>
-                        </div>
+                        </Link>
                     </div>
            
                 </div>
