@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 
+// Design Files
+import Subloader from './Sections/Subloader';
+
 // Images Common File
 import * as Img from './Sections/Img';
 
@@ -67,6 +70,7 @@ function Starportfolio() {
 
     return (
         <>
+            <Subloader/>
             <div className="progress-bx">
                 <div className="progress-lable">Set up your portfolio</div>
                 <div className="progress-percentage">25%</div>

@@ -486,7 +486,7 @@
     display: none;
     align-items: center;
     justify-content: center;
-    padding: 10px 5px 10px;
+    padding: 15px 5px 15px;
     position: sticky;
     bottom: 0px;
     left: 0;
@@ -501,7 +501,8 @@
     height: 35px;
     line-height: 35px;
     border-radius: 50px;
-    background: linear-gradient(45deg, #ffcc00, #fe5661, #ec397d, #cc11a9, #9000dc);
+    background-color: #8036e0;
+    background-image: linear-gradient(-45deg, #9401d8,#d418a0, #ec3a7c, #ff942d, #ffcc00);
     color: white;
     text-align: center;
     font-size: 14px;
@@ -564,7 +565,7 @@
 
     .sp-left-header .close-icon{
         display:flex;
-        top: 15px;
+        top: 13px;
     }
 
     .serach-overlay.filter-active{
@@ -636,6 +637,7 @@
         border-radius: 16px 16px 0 0;
         transform: translateY(100%);
         padding-bottom: 0;
+        box-shadow: rgba(0, 0, 0, 0.01) 0px 207px 58px, rgba(0, 0, 0, 0.08) 0px 132px 53px, rgba(0, 0, 0, 0.27) 0px 74px 45px, rgba(0, 0, 0, 0.45) 0px 33px 33px, rgba(0, 0, 0, 0.52) 0px 8px 18px, rgba(0, 0, 0, 0.53) 0px 0px 0px, rgba(255, 255, 255, 0.08) 0px 1px 1px inset, rgba(0, 0, 0, 0.25) 0px 0px 0px 1px inset;
     }
 
     .spage-left.active{

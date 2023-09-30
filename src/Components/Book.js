@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 
+// Design Files
+import Subloader from './Sections/Subloader';
+
 // Images Common File
 import * as Img from './Sections/Img';
 
@@ -74,6 +77,7 @@ function Book() {
 
     return (
         <>
+            <Subloader/>
             <div className='breadcrumb-outer bctwo'>
                 <div className='container-lg cl-custom'>   
                     <div className='breadcrumb-bx '>
@@ -464,7 +468,7 @@ function Book() {
                                             <div className="col-sm-6">
                                                 <div className="signinup-group sgli">
                                                     <label className="group__label">Phone Number</label>
-                                                    <input type="number" placeholder="Enter phone number" value="8320289867" disabled/>
+                                                    <input type="number" placeholder="Enter phone number"/>
                                                     <span className="group_left_icon">+91</span>
                                                 </div>
                                             </div>

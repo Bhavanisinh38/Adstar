@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import {Link} from "react-router-dom";
 
 // Design Files
+import Subloader from './Sections/Subloader';
 import Videosection from './Sections/Videosection';
 import Howitwork from './Sections/Howitwork';
 import Socialfollowers from './Sections/Socialfollowers';
@@ -46,6 +47,7 @@ function Detail() {
 
     return (
         <>
+            <Subloader/>
             <div className='breadcrumb-outer'>
                 <div className='container-lg cl-custom'>   
                     <div className='breadcrumb-bx'>

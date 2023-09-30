@@ -41,21 +41,21 @@ function Footer(props) {
                 <div className="col-md-6 text-md-end mt-2 mt-md-0">
                     <div className="footer-heading">Social media</div>
                     <div className="social-icon justify-content-md-end justify-content-start">
-                        <a className="si-item fb-item" href="/" target="_blank" rel="noreferrer">
+                        <Link className="si-item fb-item" to="/">
                             <span className='si-icon'>
                                 <i className="fa fa-facebook" aria-hidden="true"></i>
                             </span>
-                        </a>
-                        <a className="si-item insta-item" href="/" target="_blank" rel="noreferrer">
+                        </Link>
+                        <Link className="si-item insta-item" to="/">
                             <span className='si-icon'>
                                 <i className="fa fa-instagram" aria-hidden="true"></i>
                             </span>
-                        </a>
-                        <a className="si-item whatsapp-item" href="/" target="_blank" rel="noreferrer">
+                        </Link>
+                        <Link className="si-item whatsapp-item" to="/">
                             <span className='si-icon'>
                                 <i className="fa fa-whatsapp" aria-hidden="true"></i>
                             </span>
-                        </a>
+                        </Link>
                     </div>
 
                 </div>
@@ -67,7 +67,8 @@ function Footer(props) {
                         <i className="fa fa-heart-o" aria-hidden="true"></i>
                         <i className="fa fa-heart" aria-hidden="true"></i>
                     </span>
-                    by: <a href="https://pmcommu.com/" target="_blank" rel="noreferrer">PM Communications</a>
+                    by: <Link to="/">Bhavansinh Parmar</Link>
+                    {/* <a href="https://pmcommu.com/" target="_blank" rel="noreferrer">PM Communications</a> */}
                 </div>
             </div>
         </div>
