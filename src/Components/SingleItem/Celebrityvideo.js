@@ -22,6 +22,12 @@ function Celebrityvideo({src}) {
     video.addEventListener('timeupdate', () => {
       setCurrentTime(video.currentTime);
     });
+
+    // Listen for the "canplaythrough" event to know when the video is ready to play.
+    video.addEventListener('canplaythrough', () => {
+      
+    });
+
   }, []);
 
   const toggleMute = () => {
@@ -48,8 +54,13 @@ function Celebrityvideo({src}) {
 
   const handleMouseEnter = () => {
     setIsHovered(true);
-    videoRef.current.play();
-    setIsPlaying(true);
+    const video = videoRef.current;
+
+    // Check if the video is ready to play
+    if (video.readyState >= 3) {
+      video.play();
+      setIsPlaying(true);
+    }
   };
 
   const handleMouseLeave = () => {

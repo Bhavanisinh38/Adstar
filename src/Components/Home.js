@@ -17,7 +17,7 @@ function Home() {
       <Listitem pagetitle="Favourite Star" />
       <Gifts/>
       <Videosection pagetitle="Recent Reels" />
-      <Categories pagetitle="Categories" />
+      <Categories extraClass="text-md-start text-sm-center" pagetitle="Categories" />
       <Listitem pagetitle="Your City Star" />
       <Videosection pagetitle="Top Business Reels" />
       <Recentreviews pagetitle="Recent reviews"/>

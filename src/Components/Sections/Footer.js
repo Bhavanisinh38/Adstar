@@ -67,8 +67,7 @@ function Footer(props) {
                         <i className="fa fa-heart-o" aria-hidden="true"></i>
                         <i className="fa fa-heart" aria-hidden="true"></i>
                     </span>
-                    by: <Link to="/">Bhavansinh Parmar</Link>
-                    {/* <a href="https://pmcommu.com/" target="_blank" rel="noreferrer">PM Communications</a> */}
+                    by: <a href="https://pmcommu.com/" target="_blank" rel="noreferrer">PM Communications</a>
                 </div>
             </div>
         </div>

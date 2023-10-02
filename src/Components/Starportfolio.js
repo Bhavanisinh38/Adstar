@@ -231,6 +231,7 @@ function Starportfolio() {
                                             <div className="signinup-group sgri">
                                                 <label className="group__label">Your Description</label>
                                                 <textarea placeholder="Description here..."></textarea>
+                                                <span className="twl-lable">0/150 word</span>
                                             </div>
                                         </div>
                                         

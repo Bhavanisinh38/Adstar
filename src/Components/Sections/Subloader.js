@@ -7,7 +7,7 @@ function Subloader() {
   useEffect(() => {
     const timeout = setTimeout(() => {
       setLoading(true);
-    }, 10);
+    }, 100);
 
     return () => clearTimeout(timeout);
   }, [location]);

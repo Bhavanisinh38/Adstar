@@ -46,7 +46,7 @@ function Listitem(props) {
       <div className="container-lg cl-custom">
           <div className="section-heading">
             {props.pagetitle}
-            <div className={`section-heading-btn shb-sa-btn ${props.seeallbtn}`}>See all</div>
+            <Link to="/search" className={`section-heading-btn shb-sa-btn ${props.seeallbtn}`}>See all</Link>
           </div>
 
           <OwlCarousel className="mt-3" {...Listitemslider}>

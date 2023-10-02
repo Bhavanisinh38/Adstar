@@ -567,6 +567,15 @@ input[type=number] {
     min-height: 150px;
 }
 
+.signinup-group .twl-lable{
+    display: block;
+    text-align: right;
+    font-size: 14px;
+    margin-top: 5px;
+    font-weight: 300;
+    color: #bfbac4;
+}
+
 .signinup-group .group__label {
     font-size: 14px;
     color: #f2f1f3;

@@ -297,6 +297,7 @@ function Book() {
                                                 <div className="signinup-group sg-150-textarea">
                                                     <label className="group__label">Your Description</label>
                                                     <textarea placeholder="Your Description here..."></textarea>
+                                                    <span className="twl-lable">0/150 word</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -483,8 +484,9 @@ function Book() {
 
                                             <div className="col-12">
                                                 <div className="signinup-group sg-150-textarea">
-                                                    <label className="group__label">Your Description</label>
-                                                    <textarea placeholder="Your Description here..."></textarea>
+                                                    <label className="group__label">Your request</label>
+                                                    <textarea placeholder="Your request here..."></textarea>
+                                                    <span className="twl-lable">0/150 word</span>
                                                 </div>
                                             </div>
                                         </div>
