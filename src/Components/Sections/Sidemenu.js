@@ -36,6 +36,13 @@ function Sidemenu() {
                 </div>
 
                 <div className="smb-menu-bx smb-main-bx">
+                    <Link to="/account" className="account-left-pic">
+                        <img className="alp-img" src={Img.demo_img1} alt="" />
+                        <div className="alp-data">
+                            <div className="alp-name-lable">Fabrizio Romano</div>
+                            <div className="alp-email-lable">Fabrizio@gmail.com</div>
+                        </div>
+                    </Link>
                     <ul>
                         <li className={`smb-drop-menu ${isActive ? 'active' : ''}`}>
                             <div className="smb-link smb-link-not" onClick={handleItemClick}>Categories<i className="fa fa-angle-right" aria-hidden="true"></i></div>
@@ -48,9 +55,8 @@ function Sidemenu() {
                                 <div className="smb-link">Reality TV<i className="fa fa-angle-right" aria-hidden="true"></i></div>
                             </div>
                         </li>
-                        <li><div className="smb-link">For kids</div></li>
                         <li><div className="smb-link">For business</div></li>
-                        <li><div className="smb-link">How it works</div></li>
+                        <li><Link to="/starportfolio" className="smb-link">How it works</Link></li>
                         <li><Link to="/starlogin" className="smb-link">Join as talent</Link></li>
                     </ul>
                 </div>

@@ -494,6 +494,25 @@
     transition: 0.3s ease-in-out;
 }
 
+.signinup-btn-bx .sip-btn.sip-account-btn{
+    /* border: none; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 10px;
+}
+
+.signinup-btn-bx .sip-btn img{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 0.5px;
+    border-radius: 50px;
+    margin-right: 5px;
+    object-fit: cover;
+    object-position: center;
+}
+
 .signinup-btn-bx .sip-btn:hover{
     border-color: #8036e0;
     background-color: #8036e0;

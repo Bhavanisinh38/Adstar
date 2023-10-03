@@ -116,7 +116,7 @@ function Header() {
             $("body").addClass("over-body");
         });
 
-        $(".trigger-closed, .overlaydiv, li > .smb-link, .smb-logo-link, .smb-login").on("click", function (event) {
+        $(".trigger-closed, .overlaydiv, li > .smb-link, .smb-logo-link, .smb-login, .account-left-pic").on("click", function (event) {
           if (!$(this).hasClass("smb-link-not")) {
             $(".side-menu-bx").removeClass("active");
             $("body").removeClass("over-body");
@@ -182,9 +182,8 @@ function Header() {
 
             </div>
 
-            <div className="cmb-item">For kids</div>
             <div className="cmb-item">For business</div>
-            <div className="cmb-item">How it works</div>
+            <Link to="/starportfolio" className="cmb-item">How it works</Link>
             <Link to="/starlogin" className="cmb-item">Join as star</Link>
           </div>
           {/* Website Categories Menu End */}
@@ -379,6 +378,10 @@ function Header() {
             {/* Signup Btns Start */}
             <div className="signinup-btn-bx">
               <Link to="login" className="sip-btn">Login</Link>
+              <Link to="/account" className="sip-btn sip-account-btn ms-2">
+                <img src={Img.demo_img1} alt="Name Here..." />
+                Account
+              </Link>
             </div>
             {/* Signup Btns End */}
           </div>

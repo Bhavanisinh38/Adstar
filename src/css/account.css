@@ -1,0 +1,558 @@
+.account-main-section{
+    display: flex;
+    width: 100%;
+    max-width: 1920px;
+    height: 100%;
+}
+
+/* --- Account Left --- */
+.account-left{
+    position: sticky;
+    top: 70px;
+    left: 0;
+    height: calc(100vh - 70px);
+    overflow: hidden;
+    overflow-y: auto;
+    flex: 0 1 300px;
+    width: 300px;
+    background-color: #201e23;
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.08);
+    padding-bottom: 50px;
+}
+
+.account-left-pic{
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    white-space: nowrap;
+    width: 100%;
+    background: #201e23;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.smb-menu-bx .account-left-pic{
+    background: #121114;
+}
+
+.account-left-pic::after{
+    content: " ";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: calc(100% - 20px);
+    transform: translateX(-50%);
+    height: 1px;
+    background-color: black;
+}
+
+.account-left-pic .alp-img{
+    width: 45px;
+    height: 45px;
+    flex: 0 0 45px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.account-left-pic .alp-data .alp-name-lable{
+    font-size: 14px;
+    font-weight: 500;
+    color: #f2f1f3;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.account-left-pic .alp-data .alp-email-lable{
+    color: #BFBAC4;
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.account-menu-bx{
+    padding-left: 10px;
+    margin-top: 10px;
+}
+
+.account-menu-bx .amb-link{
+    position: relative;
+    display: block;
+    height: 44px;
+    line-height: 44px;
+    padding: 0 15px;
+    font-size: 15px;
+    margin-bottom: 3px;
+    color: #f2f1f3;
+    text-transform: capitalize;
+    cursor: pointer;
+    border-radius: 8px 0 0 8px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.account-menu-bx .amb-link svg{
+    position: relative;
+    top: -1px;
+    width: 20px;
+    height: 20px;
+    object-position: center;
+    object-fit: contain;
+    margin-right: 10px;
+}
+
+.account-menu-bx .amb-link:hover,
+.account-menu-bx .amb-link.active{
+    background-color: #1110134d;
+    color: white;
+}
+
+.account-menu-bx .amb-link::after{
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 4px;
+    height: calc(100% - 10px);
+    background-color: #8036e0;
+    background-image: linear-gradient(-45deg, #9401d8,#d418a0, #ec3a7c, #ff942d, #ffcc00);
+    border-radius: 50px 0 0 50px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.account-menu-bx .amb-link.active::after{
+    opacity: 1;
+}
+
+.account-menu-bx .amb-link .amb-num{
+    position: absolute;
+    left: 21px;
+    top: 5px;
+    z-index: 1;
+    width: 17px;
+    height: 17px;
+    border-radius: 50px;
+    background-color: #8036e0;
+    display: block;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 11px;
+}
+
+/* --- Account Right --- */
+.account-right{
+    flex: 1 0 calc(100% - 300px);
+    width: calc(100% - 300px);
+    padding: 0 15px;
+}
+
+.account-menu-item-bx{
+    width: 100%;
+    max-width: 992px;
+    margin: auto;
+    margin-top: 15px;
+    padding-bottom: 100px;
+}
+
+.amib-inner-item{
+    display: none;
+}
+
+.amib-inner-item.active{
+    display: block;
+}
+
+.amib-768-width{
+    width: 100%;
+    max-width: 768px;
+    margin: auto;
+}
+
+.amib-i-header{
+    font-size: 18px;
+    font-weight: 500;
+    color: #f2f1f3;
+    margin-bottom: 10px;
+}
+
+.amib-i-header svg{
+    position: relative;
+    top: -4px;
+    width: 24px;
+    height: 24px;
+    object-position: center;
+    object-fit: contain;
+    margin-right: 5px;
+}
+
+.amib-item{
+    padding: 20px;
+    border-radius: 16px;
+    background-color: rgb(32, 30, 35);
+}
+
+.amib-save-btn-bx{
+    margin-top: 25px;
+}
+
+.amib-save-btn-bx .lsb-loader-btn,
+.amib-save-btn-bx .common-submit-btn{
+    max-width: 200px;
+    display: block;
+}
+
+
+.nlb-outer{
+    margin-bottom: 15px;
+}
+
+.nlb-outer:last-child{
+    margin-bottom: 0;
+}
+
+.nlb-outer-label{
+    font-size: 16px;
+    font-weight: 400;
+    color: #f2f1f3;
+    margin-bottom: 5px;
+}
+
+.nlb-item{
+    position: relative;
+    display: flex;
+    padding: 15px 0;
+    border-bottom: 1px solid rgb(63, 59, 69);
+    cursor: pointer;
+}
+
+.nlb-item.nlb-new::after{
+    content: " ";
+    position: absolute;
+    left: 30px;
+    top: 17px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-image: linear-gradient(-45deg, #9401d8,#d418a0, #ec3a7c, #ff942d, #ffcc00);
+}
+
+.nlb-item:last-child{
+    border-bottom: none;
+}
+
+.nlb-item .nlb-icon{
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    background-color: rgba(242, 241, 243, 0.08);
+    margin-right: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.nlb-item:hover .nlb-icon{
+    color: white;
+    background-color: #8036e0;
+}
+
+.nlb-item .nlb-data .nlb-lable{
+    color: #f2f1f3;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.nlb-item .nlb-data .nlb-text{
+    color: rgb(129, 122, 138);
+    font-size: 14px;
+    font-weight: 400;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+/* --- Follow list --- */
+
+.follow-item{
+    position: relative;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    width: 100%;
+    padding: 15px 0;
+    padding-right: 105px;
+    border-bottom: 1px solid rgb(63, 59, 69);
+}
+
+.follow-item:last-child{
+    border-bottom: none;
+}
+
+.follow-item .follow-img{
+    width: 45px;
+    height: 45px;
+    flex: 0 0 45px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.follow-item .follow-data .follow-name-lable{
+    font-size: 16px;
+    font-weight: 500;
+    color: #f2f1f3;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.follow-item .follow-data .follow-tag{
+    color: #BFBAC4;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.follow-item .fi-btn{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 8px 15px;
+    border-radius: 50px;
+    font-weight: 400;
+    color: #f2f1f3;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: rgba(242, 241, 243, 0.08);
+    transition: all 0.3s ease-in-out;
+}
+
+.follow-item .fi-btn.unfollow:hover{
+    color: white;
+    background-color: #c70000;
+}
+
+
+/* --- requestes video link & Item --- */
+.requestes-video-item,
+.requestes-video-link{
+    cursor: pointer;
+    position: relative;
+    border-radius: 12px;
+    border: 1px solid rgb(63, 59, 69);
+    transition: border 150ms ease-in-out 0s;
+    margin: 10px 0;
+}
+
+.requestes-video-item:hover,
+.requestes-video-link:hover{
+    border-color:transparent;
+}
+
+.requestes-video-item::after,
+.requestes-video-link::after{
+    content: "";
+    position: absolute;
+    display: block;
+    inset: -1px;
+    border-radius: inherit;
+    transition: opacity 150ms ease-in-out 0s;
+    opacity: 0;
+    background-image: linear-gradient(-45deg, #9401d8,#d418a0, #ec3a7c, #ff942d, #ffcc00);
+}
+
+.requestes-video-item:hover::after,
+.requestes-video-link:hover::after{
+    opacity: 1;
+}
+
+.requestes-video-item .rvi-inner,
+.requestes-video-link .rvl-inner{
+    position: relative;
+    z-index: 1;
+    padding: 12px;
+    border-radius: 12px;
+    background-color: rgb(25, 24, 27);
+    transition: background-color 150ms ease-in-out 0s;
+}
+
+.requestes-video-item .rvi-heading,
+.requestes-video-link .rvl-heading{
+    font-size: 16px;
+    color: white;
+    display: flex;
+}
+
+.requestes-video-item .rvi-heading svg,
+.requestes-video-link .rvl-heading svg{
+    width: 24px;
+    height: 24px;
+    flex: 0 0 24px;
+    object-fit: cover;
+    object-position: center;
+    margin-right: 10px;
+}
+
+.orderdetail-data,
+.requestes-video-item .rvi-order-data{
+    color: #bfbac4;
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.orderdetail-data span,
+.requestes-video-item .rvi-order-data span{
+    color: white;
+    font-size: 14px;
+}
+
+.orderdetail-data span{
+    font-size: 16px;
+}
+
+.requestes-video-item .rvi-progress-bx{
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    border: none;
+    position: relative;
+    top: inherit;
+    margin-top: 10px;
+}
+
+.requestes-video-link .rvl-link{
+    font-size: 14px;
+    border: 1px solid rgb(63, 59, 69);
+    border-radius: 8px;
+    position: relative;
+    padding: 8px 45px 8px 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 10px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.requestes-video-link .rvl-link:hover{
+    border-color: #28a745;
+}
+
+.requestes-video-link .rvl-link .rvl-copy-link{
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 39px;
+    height: 39px;
+    padding: 10px;
+    background-color: #201e23;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.requestes-video-link .rvl-link:hover .rvl-copy-link{
+    background-color: #28a745;
+}
+
+.requestes-video-item .rvi-btns-bx,
+.requestes-video-link .rvl-btns-bx{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.requestes-video-item .rvi-btns-bx .rvi-btn,
+.requestes-video-link .rvl-btns-bx .rvl-btn{
+    padding: 8px 15px;
+    border-radius: 50px;
+    font-weight: 400;
+    color: #f2f1f3;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-left: 10px;
+    background-color: rgba(242, 241, 243, 0.08);
+    transition: all 0.3s ease-in-out; 
+}
+
+.requestes-video-item .rvi-btns-bx .rvi-btn:hover,
+.requestes-video-link .rvl-btns-bx .rvl-btn:hover{
+    color: #f2f1f3;
+    background-color: #8036e0;
+}
+
+.requestes-video-item .rvi-btns-bx .rvi-btn.cansel-order:hover{
+    color: white;
+    background-color: #c70000;
+}
+
+@media screen and (max-width:992px) {
+    .account-main-section{
+        flex-direction: column;
+    }
+
+    .account-left{
+        padding: 0;
+        flex: auto;
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        z-index: 11;
+        border-bottom: 1px solid black;
+    }
+
+    .account-left .account-left-pic{
+        display: none;
+    }
+
+    .account-menu-bx{
+        padding: 5px 5px 0 5px;
+        margin-top: 0;
+        display: flex;
+        overflow: hidden;
+        overflow-x: scroll;
+    }
+
+    .account-menu-bx .amb-link{
+        white-space: nowrap;
+        margin: 0;
+        border-radius: 8px 8px 0 0;
+        margin: 0 3px;
+    }
+
+    .account-menu-bx .amb-link::after{
+        width: calc(100% - 10px);
+        height: 4px;
+        right: inherit;
+        top: inherit;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+        border-radius: 50px 50px 0 0;
+    }
+
+    .account-right{
+        width: 100%;
+        flex: auto;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    .account-left{
+        top: 120px;
+    }
+}

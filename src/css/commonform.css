@@ -71,7 +71,7 @@
     border-radius: 50px;
     margin: 5px 0 10px;
     position: relative;
-    overflow: hidden;
+    overflow: inherit;
 }
 
 .progress-bx .progress-bar .progress-bar-inner {
@@ -81,10 +81,77 @@
     left: 0;
     top: 0;
     border-radius: 50px;
-    background-color: #9401d8;
+    background-color: #8036e0;
     background-image: linear-gradient(-45deg, #9401d8,#d418a0, #ec3a7c, #ff942d, #ffcc00);
     transition: all 0.3s linear;
 }
+
+.progress-bx .progress-bar .progress-bar-inner::after {
+    content: " ";
+    position: absolute;
+    right: -7.5px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 15px;
+    background-color: #8036e0;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.progress-step-lable{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    margin-top: -5px;
+}
+
+.progress-step-lable.psl-w-3 span{
+    width: 33.33%;
+    flex: 0 0 33.33%;
+}
+
+.progress-step-lable span{
+    color: #bfbac4;
+    font-size: 11px;
+    position: relative;
+    text-align: center;
+}
+
+.progress-step-lable span:first-child{
+    text-align: left;
+}
+
+.progress-step-lable span:last-child{
+    text-align: right;
+}
+
+.progress-step-lable span.active{
+    color: white;
+}
+
+/* .progress-step-lable span::after{
+    content: " ";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: calc(100% + 5px);
+    width: 1px;
+    height: 5px;
+    background-color: #bfbac4;
+}
+
+.progress-step-lable span:first-child:after{
+    left: 0px;
+    transform: inherit;
+}
+
+.progress-step-lable span:last-child:after{
+    left: inherit;
+    right: 0px;
+    transform: inherit;
+} */
 
 
 /* ---
@@ -210,9 +277,9 @@ Seconde Screen
 
 /* --- Profile Pic Css ---*/
 .profile-pic-bx{
+    position: relative;
     width: fit-content;
-    position: sticky;
-    top: 150px;
+    margin: 0 auto 15px;
 }
 
 .profile-pic-lable {
@@ -950,12 +1017,12 @@ Error Input color css
 
 /* --- Next Previous Btn --- */
 .nextprevious-bx{
-    position: sticky;
+    /* position: sticky;
     bottom: 0;
     left: 0;
     width: calc(100% + 30px);
     transform: translateX(-15px);
-    z-index: 1;
+    z-index: 1; */
     background: #121114;
     margin-top: 15px;
     display: flex;
@@ -1167,15 +1234,6 @@ Error Input color css
 /* --- Star Portfolio Page Css --- */
 .star-portfolio-main{
     padding: 40px 0 0;
-}
-
-.profile-details{
-    display: flex;
-    align-items: flex-start;
-}
-
-.profile-row{
-    padding-left: 25px;
 }
 
 /* --- portfolio screen --- */
@@ -1397,21 +1455,6 @@ Error Input color css
 @media screen and (max-width:768px) {
     .progress-bx{
         top: 120px;
-    }
-
-    .profile-details{
-        flex-direction: column;
-    }
-    
-    .profile-pic-bx{
-        position: relative;
-        top: 0;
-        margin: auto;
-        margin-bottom: 10px;
-    }
-
-    .profile-row{
-        padding-left: inherit;
     }
 
     .portfolio-price-video{

@@ -87,156 +87,159 @@ function Starportfolio() {
                             <div className="psc-hed">Add your details</div>
                             <div className="psc-pera">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum obcaecati nulla at.</div>
                             <form>
-                                <div className="profile-details">
-                                    <div className="profile-pic-bx">
-                                        <label htmlFor="profile-photo" className="profile-pic-lable">
-                                            <img className="profile-pic-img" src={Img.userm}  alt="Profile Pic" />
-                                            <div className="profile-upload">Upload</div>
-                                        </label>
-                            
-                                        <label title="Edit Pic" className="profile-pic-btn edit-btn" htmlFor="profile-photo"><i className="fa fa-pencil-square-o"></i></label>
-                                        <div title="Remove Pic" className="profile-pic-btn delete-btn"><i className="fa fa-trash-o"></i></div>
-                                        
-                                        <input type="file" name="profile-photo" id="profile-photo" hidden />
+                  
+                                <div className="row">
+
+                                    <div className="col-12 mt-4">
+                                        <div className="profile-pic-bx">
+                                            <label htmlFor="profile-photo" className="profile-pic-lable">
+                                                <img className="profile-pic-img" src={Img.userm}  alt="Profile Pic" />
+                                                <div className="profile-upload">Upload</div>
+                                            </label>
+                                
+                                            <label title="Edit Pic" className="profile-pic-btn edit-btn" htmlFor="profile-photo"><i className="fa fa-pencil-square-o"></i></label>
+                                            <div title="Remove Pic" className="profile-pic-btn delete-btn"><i className="fa fa-trash-o"></i></div>
+                                            
+                                            <input type="file" name="profile-photo" id="profile-photo" hidden />
+                                        </div>
                                     </div>
-                                    <div className="profile-row row">
 
-                                        <div className="col-12">
-                                            <div className="middle-lable">Basic Details</div>
-                                        </div>
-
-                                        <div className="col-12">
-                                            <div className="signinup-group">
-                                                <label className="group__label">Gender</label>
-                                                <div className="signinup-group-radio">
-                                                    <input type="radio" id="male" name="gender" hidden/>
-                                                    <label htmlFor="male">Male</label>
-                                                    <input type="radio" id="female" name="gender" hidden/>
-                                                    <label htmlFor="female">Female</label>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div className="col-sm-6">
-                                            <div className="signinup-group">
-                                                <label className="group__label">Your Name</label>
-                                                <input type="text" placeholder="Enter your name"/>
-                                            </div>
-                                        </div>
-
-                                        <div className="col-sm-6">
-                                            <div className="signinup-group sgli">
-                                                <label className="group__label">Phone Number</label>
-                                                <input type="number" placeholder="Enter phone number" value="8320289867" disabled/>
-                                                <span className="group_left_icon">+91</span>
-                                            </div>
-                                        </div>
-
-                                        <div className="col-sm-6">
-                                            <div className="signinup-group error-group">
-                                                <label className="group__label">Your email</label>
-                                                <input type="email" placeholder="you@example.com"/>
-                                                <span className="form-error-msg">You must provide an email</span>
-                                            </div>
-                                        </div>
-
-                                        <div className="col-sm-6">
-                                            <div className="signinup-group">
-                                                <label className="group__label">Date of birth</label>
-                                                <input type="text" inputMode="numeric"  value={bodValue}  onChange={handlebodChange} placeholder="DD/MM/YYYY"/>
-                                                <span className="clear-input-icon" hidden={isbodShow} onClick={handlebodClear}>
-                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="38" d="M368 368L144 144M368 144L144 368"/></svg>
-                                                </span>
-                                            </div>
-                                        </div>
-
-                                        <div className="col-12">
-                                           <div className='middle-lable'>Additional details</div>
-                                        </div>
-
-                                        <div className="col-sm-6">
-                                            <div className="signinup-group">
-                                                <label className="group__label">Name<span>(Instagram Name)</span></label>
-                                                <input type="text" placeholder="Enter instagram Name"/>
-                                            </div>
-                                        </div>
-
-                                        <div className="col-sm-6">
-                                            <div className="signinup-group sgri">
-                                                <label className="group__label">Your Categorie</label>
-                                                <select defaultValue="Selectcategorie">
-                                                    <option value="Selectcategorie" disabled>Select categorie</option>
-                                                    <option value="Actors">Actors</option>
-                                                    <option value="Athletes">Athletes</option>
-                                                    <option value="Comedians">Comedians</option>
-                                                    <option value="Creators">Creators</option>
-                                                    <option value="Musicians">Musicians</option>
-                                                    <option value="RealityTV">Reality TV</option>
-                                                </select>
-                                                <span className="down-icon"></span>
-                                            </div>
-                                        </div>
-
-                                        <div className="col-sm-6">
-                                            <div className="signinup-group">
-                                                <label className="group__label">Your Designation</label>
-                                                <input type="text" placeholder="Enter your Designation"/>
-                                            </div>
-                                        </div>
-
-                                        <div className="col-sm-6">
-                                            <div className="signinup-group sgri">
-                                                <label className="group__label">Time</label>
-                                                <select defaultValue="SelectTime">
-                                                    <option value="SelectTime" disabled>Select Time</option>
-                                                    <option value="day1">1 Day</option>
-                                                    <option value="day2">2 Day</option>
-                                                    <option value="day3">3 Day</option>
-                                                    <option value="day4">4 Day</option>
-                                                    <option value="day5">5 Day</option>
-                                                    <option value="day6">6 Day</option>
-                                                    <option value="day7">7 Day</option>
-                                                </select>
-                                                <span className="down-icon"></span>
-                                            </div>
-                                        </div>
-
-                                        <div className="col-sm-6">
-                                            <div className="signinup-group sgri">
-                                                <label className="group__label">Your State</label>
-                                                <select defaultValue="SelectCity">
-                                                    <option value="SelectCity" disabled>Select your state</option>
-                                                    <option value="Gujarat">Gujarat</option>
-                                                    <option value="Maharashtra">Maharashtra</option>
-                                                    <option value="Goa">Goa</option>
-                                                </select>
-                                                <span className="down-icon"></span>
-                                            </div>
-                                        </div>
-
-                                        <div className="col-sm-6">
-                                            <div className="signinup-group sgri">
-                                                <label className="group__label">Your City</label>
-                                                <select defaultValue="SelectCity">
-                                                    <option value="SelectCity" disabled>Select your City</option>
-                                                    <option value="Mumbai">Mumbai</option>
-                                                    <option value="Ahmedabad">Ahmedabad</option>
-                                                    <option value="Goa">Goa</option>
-                                                </select>
-                                                <span className="down-icon"></span>
-                                            </div>
-                                        </div>
-
-                                        <div className="col-12">
-                                            <div className="signinup-group sgri">
-                                                <label className="group__label">Your Description</label>
-                                                <textarea placeholder="Description here..."></textarea>
-                                                <span className="twl-lable">0/150 word</span>
-                                            </div>
-                                        </div>
-                                        
+                                    <div className="col-12">
+                                        <div className="middle-lable">Basic Details</div>
                                     </div>
+
+                                    <div className="col-12">
+                                        <div className="signinup-group">
+                                            <label className="group__label">Gender</label>
+                                            <div className="signinup-group-radio">
+                                                <input type="radio" id="male" name="gender" hidden/>
+                                                <label htmlFor="male">Male</label>
+                                                <input type="radio" id="female" name="gender" hidden/>
+                                                <label htmlFor="female">Female</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div className="col-sm-6">
+                                        <div className="signinup-group">
+                                            <label className="group__label">Your Name</label>
+                                            <input type="text" placeholder="Enter your name"/>
+                                        </div>
+                                    </div>
+
+                                    <div className="col-sm-6">
+                                        <div className="signinup-group sgli">
+                                            <label className="group__label">Phone Number</label>
+                                            <input type="number" placeholder="Enter phone number" value="8320289867" disabled/>
+                                            <span className="group_left_icon">+91</span>
+                                        </div>
+                                    </div>
+
+                                    <div className="col-sm-6">
+                                        <div className="signinup-group error-group">
+                                            <label className="group__label">Your email</label>
+                                            <input type="email" placeholder="you@example.com"/>
+                                            <span className="form-error-msg">You must provide an email</span>
+                                        </div>
+                                    </div>
+
+                                    <div className="col-sm-6">
+                                        <div className="signinup-group">
+                                            <label className="group__label">Date of birth</label>
+                                            <input type="text" inputMode="numeric"  value={bodValue}  onChange={handlebodChange} placeholder="DD/MM/YYYY"/>
+                                            <span className="clear-input-icon" hidden={isbodShow} onClick={handlebodClear}>
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="38" d="M368 368L144 144M368 144L144 368"/></svg>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div className="col-12">
+                                        <div className='middle-lable'>Additional details</div>
+                                    </div>
+
+                                    <div className="col-sm-6">
+                                        <div className="signinup-group">
+                                            <label className="group__label">Name<span>(Instagram Name)</span></label>
+                                            <input type="text" placeholder="Enter instagram Name"/>
+                                        </div>
+                                    </div>
+
+                                    <div className="col-sm-6">
+                                        <div className="signinup-group sgri">
+                                            <label className="group__label">Your Categorie</label>
+                                            <select defaultValue="Selectcategorie">
+                                                <option value="Selectcategorie" disabled>Select categorie</option>
+                                                <option value="Actors">Actors</option>
+                                                <option value="Athletes">Athletes</option>
+                                                <option value="Comedians">Comedians</option>
+                                                <option value="Creators">Creators</option>
+                                                <option value="Musicians">Musicians</option>
+                                                <option value="RealityTV">Reality TV</option>
+                                            </select>
+                                            <span className="down-icon"></span>
+                                        </div>
+                                    </div>
+
+                                    <div className="col-sm-6">
+                                        <div className="signinup-group">
+                                            <label className="group__label">Your Designation</label>
+                                            <input type="text" placeholder="Enter your Designation"/>
+                                        </div>
+                                    </div>
+
+                                    <div className="col-sm-6">
+                                        <div className="signinup-group sgri">
+                                            <label className="group__label">Time</label>
+                                            <select defaultValue="SelectTime">
+                                                <option value="SelectTime" disabled>Select Time</option>
+                                                <option value="day1">1 Day</option>
+                                                <option value="day2">2 Day</option>
+                                                <option value="day3">3 Day</option>
+                                                <option value="day4">4 Day</option>
+                                                <option value="day5">5 Day</option>
+                                                <option value="day6">6 Day</option>
+                                                <option value="day7">7 Day</option>
+                                            </select>
+                                            <span className="down-icon"></span>
+                                        </div>
+                                    </div>
+
+                                    <div className="col-sm-6">
+                                        <div className="signinup-group sgri">
+                                            <label className="group__label">Your State</label>
+                                            <select defaultValue="SelectCity">
+                                                <option value="SelectCity" disabled>Select your state</option>
+                                                <option value="Gujarat">Gujarat</option>
+                                                <option value="Maharashtra">Maharashtra</option>
+                                                <option value="Goa">Goa</option>
+                                            </select>
+                                            <span className="down-icon"></span>
+                                        </div>
+                                    </div>
+
+                                    <div className="col-sm-6">
+                                        <div className="signinup-group sgri">
+                                            <label className="group__label">Your City</label>
+                                            <select defaultValue="SelectCity">
+                                                <option value="SelectCity" disabled>Select your City</option>
+                                                <option value="Mumbai">Mumbai</option>
+                                                <option value="Ahmedabad">Ahmedabad</option>
+                                                <option value="Goa">Goa</option>
+                                            </select>
+                                            <span className="down-icon"></span>
+                                        </div>
+                                    </div>
+
+                                    <div className="col-12">
+                                        <div className="signinup-group sgri">
+                                            <label className="group__label">Your Description</label>
+                                            <textarea placeholder="Description here..."></textarea>
+                                            <span className="twl-lable">0/150 word</span>
+                                        </div>
+                                    </div>
+                                    
                                 </div>
+    
                                 <div className="nextprevious-bx justify-content-end">
                                     {/* <button onClick={() => handlePortfolioScreenChange('registration-screen')} type="button" className="nextprevious-btn" hidden><i className="fa fa-angle-left" aria-hidden="true"></i>Previous</button> */}
                                     <button onClick={() => handlePortfolioScreenChange('socialmedia')} type="button" className="nextprevious-btn">Continue<i className="fa fa-angle-right" aria-hidden="true"></i></button>

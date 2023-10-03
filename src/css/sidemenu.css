@@ -249,6 +249,7 @@
     padding: 8px 18px;
     font-size: 14px;
     font-weight: 500;
+    display: block;
     width: fit-content;
     border-radius: 50px;
     cursor: pointer;

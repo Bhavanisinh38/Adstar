@@ -88,7 +88,7 @@ Flash Message Popup Start
 .flash-message.ef-msg .flash-text h6 {
     font-weight: 500;
     font-size: 20px;
-    color: red;
+    color: #c70000;
     margin-bottom: 0px;
 }
 
@@ -126,7 +126,7 @@ Flash Message Popup Start
 }
 
 .flash-message .msg-close:hover {
-    color: red;
+    color: #c70000;
     transform: rotate(90deg);
 }
 

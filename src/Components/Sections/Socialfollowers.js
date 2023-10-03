@@ -47,6 +47,36 @@ function Socialfollowers() {
                         <td>@youtube</td>
                         <td className="text-end text-white">3.5M</td>
                     </tr>
+                    <tr>
+                        <td><i className="fa fa-twitter me-1" aria-hidden="true"></i>Twitter</td>
+                        <td>@twitter</td>
+                        <td className="text-end text-white">3.5M</td>
+                    </tr>
+                    <tr>
+                        <td><i className="fa fa-paper-plane me-1" aria-hidden="true"></i>Telegram</td>
+                        <td>@telegram</td>
+                        <td className="text-end text-white">3.5M</td>
+                    </tr>
+                    <tr>
+                        <td><i className="fa fa-pinterest me-1" aria-hidden="true"></i>Pinterest</td>
+                        <td>@pinterest</td>
+                        <td className="text-end text-white">3.5M</td>
+                    </tr>
+                    <tr>
+                        <td><i className="fa fa-reddit me-1" aria-hidden="true"></i>Reddit</td>
+                        <td>@reddit</td>
+                        <td className="text-end text-white">3.5M</td>
+                    </tr>
+                    <tr>
+                        <td><i className="fa fa-linkedin me-1" aria-hidden="true"></i>Linkedin</td>
+                        <td>@linkedin</td>
+                        <td className="text-end text-white">3.5M</td>
+                    </tr>
+                    <tr>
+                        <td><i className="fa fa-whatsapp me-1" aria-hidden="true"></i>Whatsapp</td>
+                        <td>@whatsapp</td>
+                        <td className="text-end text-white">3.5M</td>
+                    </tr>
                 </tbody>
             </table>
 

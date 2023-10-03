@@ -343,6 +343,73 @@ body{
     text-align: center;
 }
 
+.custom-modal-header .cmh-sub-lable{
+    font-size: 16px;
+    color: #f2f1f3;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 5px;
+}
+
+
+.custom-modal-btn .cmb-btn{
+    padding: 8px 15px;
+    border-radius: 50px;
+    font-weight: 400;
+    color: #f2f1f3;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin:0 5px;
+    background-color: rgba(242, 241, 243, 0.08);
+    transition: all 0.3s ease-in-out;
+}
+
+.custom-modal-btn .cmb-btn:first-child{
+    margin-left: 0;
+}
+
+.custom-modal-btn .cmb-btn:last-child{
+    margin-right: 0;
+}
+
+.custom-modal-btn .cmb-btn:hover{
+    color: white;
+    background-color: #8036e0;
+}
+
+.custom-modal-btn .cmb-btn.yes:hover{
+    color: white;
+    background-color: #c70000;
+}
+
+.custom-modal-btn .cmb-btn.no:hover{
+    color: white;
+    background-color: #28a745;
+}
+
+
+.custom-modal-nots {
+    background: rgb(25, 24, 27);
+    border-radius: 5px;
+    padding: 10px 10px;
+    margin: 15px;
+}
+
+.custom-modal-nots span {
+    font-size: 13px;
+    color: #f2f1f3;
+    font-weight: 500;
+}
+
+.custom-modal-nots p {
+    color: #bfbac4;
+    font-size: 14px;
+    margin: 5px 0;
+    line-height: 1.5;
+}
+
 /* --- Overlaydiv Css --- */
 .book-overlay,
 .detail-overlay,

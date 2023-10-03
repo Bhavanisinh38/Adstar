@@ -1,3 +1,21 @@
+/* --- Select Start Css --- */
+
+.star-rating{
+    display: flex;
+    padding: 4px 0 0 5px;
+}
+
+.star-rating .star-icon{
+    margin-right: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #bfbac4;
+}
+
+.star-rating .star-icon.filled{
+    color: rgb(235, 228, 70);
+}
+
 /* --- Reviews Section --- */
 .reviews-section{
     padding: 20px 20px;
