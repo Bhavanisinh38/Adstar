@@ -33,9 +33,21 @@
     z-index: 2;
 }
 
+/* --- Side menu --- */
 .smb-menu-bx .account-left-pic{
     background: #121114;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: 0.3s all 0.55s ease;
 }
+
+.side-menu-bx.active .account-left-pic{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+}
+/* --- Side Menu --- */
 
 .account-left-pic::after{
     content: " ";
@@ -554,5 +566,13 @@
 @media screen and (max-width:768px) {
     .account-left{
         top: 120px;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .amib-item{
+        padding: 0px;
+        border-radius: 0px;
+        background-color: transparent;
     }
 }

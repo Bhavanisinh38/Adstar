@@ -360,7 +360,7 @@ function Account() {
                             <img className="empty-img" src={Img.empty} alt="Data is not available" />
                             <div className="empty-heading">Not Found</div>
                             <div className="empty-sub-heading">Browse thousands of stars offering personalized videos.</div>
-                            <Link to="/serach" className="empty-btn">Find a celebrity</Link>
+                            <Link to="/search" className="empty-btn">Find a celebrity</Link>
                         </div>
                     </div>
                     {/* --- Requestes Bx End --- */}
@@ -428,7 +428,7 @@ function Account() {
                             <img className="empty-img" src={Img.empty} alt="Data is not available" />
                             <div className="empty-heading">Not Found</div>
                             <div className="empty-sub-heading">Browse thousands of stars offering personalized videos.</div>
-                            <Link to="/serach" className="empty-btn">Find a celebrity</Link>
+                            <Link to="/search" className="empty-btn">Find a celebrity</Link>
                         </div>
                     </div>
                     {/* --- My Videos bx End --- */}
@@ -499,7 +499,7 @@ function Account() {
                             <img className="empty-img" src={Img.empty} alt="Data is not available" />
                             <div className="empty-heading">Not Found</div>
                             <div className="empty-sub-heading">Find and follow your favorite celebrities</div>
-                            <Link to="/serach" className="empty-btn">Find a celebrity</Link>
+                            <Link to="/search" className="empty-btn">Find a celebrity</Link>
                         </div>
                         
                     </div>
