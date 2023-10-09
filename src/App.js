@@ -30,7 +30,7 @@ function App() {
 
   // Define an array of paths where you want to hide the footer
   const pathsToHideheader = ['/book'];
-  const pathsToHideFooter = ['/search', '/book', '/account'];
+  const pathsToHideFooter = ['/search', '/category', '/book', '/account', '/staraccount'];
   
   // Check if the current path is in the array of paths to hide the footer
   const hideheader = pathsToHideheader.includes(location.pathname);
@@ -52,12 +52,14 @@ function App() {
         <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/search" element={<Search />} />
+            <Route path="/category" element={<Search />} />
             <Route path="/detail" element={<Detail />} />
             <Route path="/login" element={<Login />} />
             <Route path="/starlogin" element={<Starlogin screenhed="as star" startfield="d-block" />} />
             <Route path="/starportfolio" element={<Starportfolio />} />
             <Route path="/book" element={<Book />} />
             <Route path="/account" element={<Account />} />
+            <Route path="/staraccount" element={<Account startfield="" />} />
         </Routes>
         <Commonpopup />
         <FlashMessage />

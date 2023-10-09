@@ -36,7 +36,7 @@ function Sidemenu() {
                 </div>
 
                 <div className="smb-menu-bx smb-main-bx">
-                    <Link to="/account" className="account-left-pic">
+                    <Link to="/staraccount" className="account-left-pic">
                         <img className="alp-img" src={Img.demo_img1} alt="" />
                         <div className="alp-data">
                             <div className="alp-name-lable">Fabrizio Romano</div>
@@ -75,7 +75,7 @@ function Sidemenu() {
                 </div>
 
                 <div className="smb-footer">
-                    <Link to="/login" className='smb-login'>Login</Link>
+                    <Link to="/starlogin" className='smb-login'>Login</Link>
                 </div>
 
             </aside>

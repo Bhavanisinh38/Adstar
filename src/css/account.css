@@ -3,6 +3,7 @@
     width: 100%;
     max-width: 1920px;
     height: 100%;
+    margin: 0 auto;
 }
 
 /* --- Account Left --- */
@@ -167,18 +168,114 @@
 
 .account-menu-item-bx{
     width: 100%;
-    max-width: 992px;
-    margin: auto;
+    /* max-width: 992px; */
+    /* margin: auto; */
     margin-top: 15px;
     padding-bottom: 100px;
 }
 
+.amib-i-tab,
 .amib-inner-item{
     display: none;
 }
 
+.amib-i-tab.active,
 .amib-inner-item.active{
     display: block;
+}
+
+
+/* --- amib inner tabbx start --- */
+.amib-inner-tabbx{
+    background: #121114;
+    position: sticky;
+    top: 70px;
+    z-index: 10;
+    white-space: nowrap;
+    width: calc(100% + 30px);
+    height: 59px;
+    transform: translateX(-15px);
+    border-bottom: 1px solid black;
+    margin-bottom: 25px;
+    padding: 10px 10px;
+    margin-top: -15px;
+    overflow: hidden;
+    overflow-x: auto;
+}
+
+.amib-inner-tabbx .ait-link{
+    position: relative;
+    display: inline-block;
+    padding: 8px 12px;
+    font-size: 14px;
+    color: #f2f1f3;
+    text-transform: capitalize;
+    cursor: pointer;
+    margin-right: 5px;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    overflow: hidden;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.amib-inner-tabbx .ait-link::after{
+    content: " ";
+    position: absolute;
+    display: block;
+    inset: 1px;
+    z-index: -1;
+    border-radius: inherit;
+    background-color: rgb(25, 24, 27);
+}
+
+.amib-inner-tabbx .ait-link.active::after,
+.amib-inner-tabbx .ait-link:hover::after{
+    background-color: rgb(32, 30, 35);
+}
+
+.amib-inner-tabbx .ait-link::before{
+    content: "";
+    position: absolute;
+    display: block;
+    inset: -1px;
+    border-radius: inherit;
+    transition: opacity 150ms ease-in-out 0s;
+    opacity: 0;
+    z-index: -2;
+    background-image: linear-gradient(-45deg, #9401d8,#d418a0, #ec3a7c, #ff942d, #ffcc00);
+}
+
+.amib-inner-tabbx .ait-link.active::before,
+.amib-inner-tabbx .ait-link:hover::before{
+    opacity: 1;
+}
+
+.amib-inner-tabbx .ait-link:last-child{
+    margin-right: 0px;
+}
+
+.amib-inner-tabbx .ait-link svg{
+    position: relative;
+    top: -2px;
+    width: 18px;
+    height: 18px;
+    object-position: center;
+    object-fit: contain;
+    margin-right: 5px;
+}
+/* --- amib inner tabbx end --- */
+
+
+.amib-992-width{
+    width: 100%;
+    max-width: 992px;
+    margin: auto;
+}
+
+.amib-900-width{
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
 }
 
 .amib-768-width{
@@ -196,7 +293,7 @@
 
 .amib-i-header svg{
     position: relative;
-    top: -4px;
+    top: -2px;
     width: 24px;
     height: 24px;
     object-position: center;
@@ -506,6 +603,11 @@
     background-color: #8036e0;
 }
 
+.requestes-video-item .rvi-btns-bx .rvi-btn.approve-order:hover{
+    color: white;
+    background-color: #28a745;
+}
+
 .requestes-video-item .rvi-btns-bx .rvi-btn.cansel-order:hover{
     color: white;
     background-color: #c70000;
@@ -518,10 +620,10 @@
 
     .account-left{
         padding: 0;
-        flex: auto;
+        flex: initial;
         width: 100%;
+        max-width: 100%;
         height: auto;
-        overflow: hidden;
         z-index: 11;
         border-bottom: 1px solid black;
     }
@@ -533,9 +635,10 @@
     .account-menu-bx{
         padding: 5px 5px 0 5px;
         margin-top: 0;
-        display: flex;
-        overflow: hidden;
+        display: block;
+        white-space: nowrap;
         overflow-x: scroll;
+        transition: overflow-x 0.3s ease-in-out;
     }
 
     .account-menu-bx .amb-link{
@@ -543,6 +646,7 @@
         margin: 0;
         border-radius: 8px 8px 0 0;
         margin: 0 3px;
+        display: inline-block;
     }
 
     .account-menu-bx .amb-link::after{
@@ -561,12 +665,21 @@
         flex: auto;
     }
 
+    .amib-inner-tabbx{
+        top: calc(70px + 49px);
+    }
+
 }
 
 @media screen and (max-width:768px) {
     .account-left{
         top: 120px;
     }
+
+    .amib-inner-tabbx{
+        top: calc(120px + 49px);
+    }
+
 }
 
 @media screen and (max-width:576px) {

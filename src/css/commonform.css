@@ -1200,6 +1200,39 @@ Error Input color css
     color: #ea4436;
 }
 
+/* --- Add btn --- */
+.add-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 10px;
+    width: 100%;
+    min-height: 100px;
+    border-radius: 16px;
+    background-color: rgb(32, 30, 35);
+    border: 1px dashed rgb(63, 59, 69);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    color: rgb(191, 186, 196);
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.add-btn svg{
+    width: 50px;
+    height: 50px;
+    margin-bottom: 5px;
+    transform: rotate(45deg);
+}
+
+.add-btn:hover{
+    color: white;
+    border-style: solid;
+    border-color: #8036e0;
+    box-shadow: 0 0 1px 1px #8036e0;
+}
+
 /* --- Add More Btn --- */
 .add-more-btn{
     position: relative;
@@ -1249,7 +1282,9 @@ Error Input color css
 }
 
 .social-field{
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+    padding-right: 45px;
+    position: relative;
 }
 
 .social-field .col-10{
@@ -1284,7 +1319,7 @@ Error Input color css
     font-weight: 500;
     font-size: 16px;
     padding: 8px 0 8px 0;
-    margin-top: 15px;
+    /* margin-top: 15px; */
     margin-bottom: 5px;
     border-bottom: 1px solid rgb(63, 59, 69);
 }

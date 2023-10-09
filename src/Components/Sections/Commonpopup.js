@@ -16,6 +16,107 @@ function Commonpopup() {
 
     return (
         <>
+            {/* Social Media Popup */}
+            <div className="modal fade zoom" id="socialmediamodal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div className="modal-dialog modal-dialog-centered">
+                    <div className="modal-content custom-content">
+                        <div className="custom-modal-header">
+                            <div className="cmh-lable">Select Social Media</div>
+
+                            <span className="close-icon" data-bs-dismiss="modal" aria-label="Close">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="32" d="M368 368L144 144M368 144L144 368"></path>
+                                </svg>
+                            </span>
+                        </div>
+                        <div className="custom-modal-data">
+                            <div className="social-icon social-media-select my-2">
+                                <div className="si-sms">
+                                    <div className="si-item">
+                                        <span className='si-icon'>
+                                            <i className="fa fa-facebook" aria-hidden="true"></i>
+                                        </span>
+                                        <div className='si-lable'>Facebook</div>
+                                    </div>
+                                </div>
+                                <div className="si-sms">
+                                    <div className="si-item">
+                                        <span className='si-icon'>
+                                            <i className="fa fa-instagram" aria-hidden="true"></i>
+                                        </span>
+                                        <div className='si-lable'>Instagram</div>
+                                    </div>
+                                </div>
+                                <div className="si-sms">
+                                    <div className="si-item">
+                                        <span className='si-icon'>
+                                            <i className="fa fa-youtube-play" aria-hidden="true"></i>
+                                        </span>
+                                        <div className='si-lable'>Youtube</div>
+                                    </div>
+                                </div>
+                                <div className="si-sms">
+                                    <div className="si-item">
+                                        <span className='si-icon'>
+                                            <i className="fa fa-twitter" aria-hidden="true"></i>
+                                        </span>
+                                        <div className='si-lable'>Twitter</div>
+                                    </div>
+                                </div>
+                                <div className="si-sms">
+                                    <div className="si-item">
+                                        <span className='si-icon'>
+                                            <i className="fa fa-paper-plane" aria-hidden="true"></i>
+                                        </span>
+                                        <div className='si-lable'>Telegram</div>
+                                    </div>
+                                </div>
+                                <div className="si-sms">
+                                    <div className="si-item">
+                                        <span className='si-icon'>
+                                            <i className="fa fa-pinterest" aria-hidden="true"></i>
+                                        </span>
+                                        <div className='si-lable'>Pinterest</div>
+                                    </div>
+                                </div>
+                                <div className="si-sms">
+                                    <div className="si-item">
+                                        <span className='si-icon'>
+                                            <i className="fa fa-reddit" aria-hidden="true"></i>
+                                        </span>
+                                        <div className='si-lable'>Reddit</div>
+                                    </div>
+                                </div>
+                                <div className="si-sms">
+                                    <div className="si-item">
+                                        <span className='si-icon'>
+                                            <i className="fa fa-linkedin" aria-hidden="true"></i>
+                                        </span>
+                                        <div className='si-lable'>Linkedin</div>
+                                    </div>
+                                </div>
+                                <div className="si-sms">
+                                    <div className="si-item">
+                                        <span className='si-icon'>
+                                            <i className="fa fa-whatsapp" aria-hidden="true"></i>
+                                        </span>
+                                        <div className='si-lable'>Whatsapp</div>
+                                    </div>
+                                </div>
+                                <div className="si-sms">
+                                    <div className="si-item">
+                                        <span className='si-icon'>
+                                            <i className="fa fa-globe" aria-hidden="true"></i>
+                                        </span>
+                                        <div className='si-lable'>Other</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             {/* Share Popup */}
             <div className="modal fade zoom" id="sharemodal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div className="modal-dialog modal-dialog-centered">
