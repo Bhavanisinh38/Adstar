@@ -1,6 +1,71 @@
+import React, { useState } from 'react';
 
 function Socialfollowers() {
-    
+    const initialRowCount = 3; // Initial visible rows
+    const [rowCount, setRowCount] = useState(initialRowCount);
+    const [showAdditionalRows, setShowAdditionalRows] = useState(false);
+  
+    const data = [
+      {
+        id: 1,
+        platform: 'Facebook',
+        socialHandle: '@facebook',
+        followers: '3.5M',
+      },
+      {
+        id: 2,
+        platform: 'Instagram',
+        socialHandle: '@instagram',
+        followers: '3.5M',
+      },
+      {
+        id: 3,
+        platform: 'Youtube',
+        socialHandle: '@youtube',
+        followers: '3.5M',
+      },
+      {
+        id: 4,
+        platform: 'Twitter',
+        socialHandle: '@twitter',
+        followers: '3.5M',
+      },
+      {
+        id: 5,
+        platform: 'Telegram',
+        socialHandle: '@telegram',
+        followers: '3.5M',
+      },
+      {
+        id: 6,
+        platform: 'Pinterest',
+        socialHandle: '@pinterest',
+        followers: '3.5M',
+      },
+      {
+        id: 7,
+        platform: 'Reddit',
+        socialHandle: '@reddit',
+        followers: '3.5M',
+      },
+      {
+        id: 8,
+        platform: 'Linkedin',
+        socialHandle: '@linkedin',
+        followers: '3.5M',
+      },
+      {
+        id: 9,
+        platform: 'Whatsapp',
+        socialHandle: '@whatsapp',
+        followers: '3.5M',
+      },
+    ];
+  
+    const toggleAdditionalRows = () => {
+      setShowAdditionalRows((prev) => !prev);
+    };
+
     return (
     <section className="pt-5">
         <div className="container-lg cl-custom">
@@ -32,53 +97,26 @@ function Socialfollowers() {
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td><i className="fa fa-facebook-square me-1" aria-hidden="true"></i>Facebook</td>
-                        <td>@facebook</td>
-                        <td className="text-end text-white">3.5M</td>
+                    {data.slice(0, rowCount).map((row) => (
+                        <tr key={row.id}>
+                            <td>{row.platform}</td>
+                            <td>{row.socialHandle}</td>
+                            <td className="text-end text-white">{row.followers}</td>
+                        </tr>
+                    ))}
+                    {showAdditionalRows && data.slice(rowCount).map((row) => (
+                    <tr key={row.id}>
+                        <td>{row.platform}</td>
+                        <td>{row.socialHandle}</td>
+                        <td className="text-end text-white">{row.followers}</td>
                     </tr>
-                    <tr>
-                        <td><i className="fa fa-instagram me-1" aria-hidden="true"></i>Instagram</td>
-                        <td>@instagram</td>
-                        <td className="text-end text-white">3.5M</td>
-                    </tr>
-                    <tr>
-                        <td><i className="fa fa-youtube-play me-1" aria-hidden="true"></i>Youtube</td>
-                        <td>@youtube</td>
-                        <td className="text-end text-white">3.5M</td>
-                    </tr>
-                    <tr>
-                        <td><i className="fa fa-twitter me-1" aria-hidden="true"></i>Twitter</td>
-                        <td>@twitter</td>
-                        <td className="text-end text-white">3.5M</td>
-                    </tr>
-                    <tr>
-                        <td><i className="fa fa-paper-plane me-1" aria-hidden="true"></i>Telegram</td>
-                        <td>@telegram</td>
-                        <td className="text-end text-white">3.5M</td>
-                    </tr>
-                    <tr>
-                        <td><i className="fa fa-pinterest me-1" aria-hidden="true"></i>Pinterest</td>
-                        <td>@pinterest</td>
-                        <td className="text-end text-white">3.5M</td>
-                    </tr>
-                    <tr>
-                        <td><i className="fa fa-reddit me-1" aria-hidden="true"></i>Reddit</td>
-                        <td>@reddit</td>
-                        <td className="text-end text-white">3.5M</td>
-                    </tr>
-                    <tr>
-                        <td><i className="fa fa-linkedin me-1" aria-hidden="true"></i>Linkedin</td>
-                        <td>@linkedin</td>
-                        <td className="text-end text-white">3.5M</td>
-                    </tr>
-                    <tr>
-                        <td><i className="fa fa-whatsapp me-1" aria-hidden="true"></i>Whatsapp</td>
-                        <td>@whatsapp</td>
-                        <td className="text-end text-white">3.5M</td>
-                    </tr>
+                    ))}
                 </tbody>
             </table>
+
+            <button className="common-btn" onClick={toggleAdditionalRows}>
+                {showAdditionalRows ? 'Less all' : 'Show All'}
+            </button>
 
         </div>
     </section>

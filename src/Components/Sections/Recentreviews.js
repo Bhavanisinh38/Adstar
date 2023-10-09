@@ -110,6 +110,7 @@ function Recentreviews(props) {
                     <div className="reviews-btn"  data-bs-toggle="modal" data-bs-target="#fullreview">View More <i className="fa fa-angle-right"></i></div>
                 </div>
             </OwlCarousel>
+            <button className="common-btn mt-3" data-bs-target="#addreviewmodal" data-bs-toggle="modal">Add review</button>
         </div>
       </section>
       </>

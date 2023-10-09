@@ -940,6 +940,26 @@ Empty Box Css
     background-color: #44404a;
 }
 
+/* --- common Btn --- */
+.common-btn{
+    padding: 7px 15px;
+    border-radius: 50px;
+    font-weight: 400;
+    color: #f2f1f3;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-top: 10px;
+    background-color: rgba(242, 241, 243, 0.08);
+    transition: all 0.3s ease-in-out;
+}
+
+.common-btn:hover{
+    color: white;
+    background-color: #8036e0;
+}
+
 /* --- Footer Css --- */
 .container-lg.cl-footer{
     max-width: 1920px;
