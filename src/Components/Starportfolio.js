@@ -251,6 +251,7 @@ function Starportfolio() {
                             <div className="psc-hed">Add your social media</div>
                             <div className="psc-pera">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum obcaecati nulla at.</div>
                             <form>
+                                
                                 <div className="row mx-0 social-field">
                                     <div className="ps-0 col-10">
                                         <div className="signinup-group sgli">
@@ -265,7 +266,11 @@ function Starportfolio() {
                                             <input type="text" placeholder="Eg:1.5M"/>
                                         </div>
                                     </div>
+                                    <span className="clear-input-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="38" d="M368 368L144 144M368 144L144 368"/></svg>
+                                    </span>
                                 </div>
+
                                 <div className="row mx-0 social-field">
                                     <div className="ps-0 col-10">
                                         <div className="signinup-group sgli">
@@ -280,7 +285,11 @@ function Starportfolio() {
                                             <input type="text" placeholder="Eg:1.5M"/>
                                         </div>
                                     </div>
+                                    <span className="clear-input-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="38" d="M368 368L144 144M368 144L144 368"/></svg>
+                                    </span>
                                 </div>
+
                                 <div className="row mx-0 social-field">
                                     <div className="ps-0 col-10">
                                         <div className="signinup-group sgli">
@@ -295,7 +304,21 @@ function Starportfolio() {
                                             <input type="text" placeholder="Eg:1.5M"/>
                                         </div>
                                     </div>
+                                    <span className="clear-input-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="38" d="M368 368L144 144M368 144L144 368"/></svg>
+                                    </span>
                                 </div>
+
+                                <div className="add-btn" data-bs-toggle="modal" data-bs-target="#socialmediamodal">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="38" d="M368 368L144 144M368 144L144 368"/></svg>
+                                    Add your social links
+                                </div>
+
+                                <div className="add-more-btn" data-bs-toggle="modal" data-bs-target="#socialmediamodal">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="38" d="M368 368L144 144M368 144L144 368"/></svg>
+                                    Add more social link
+                                </div>
+
                                 <div className="nextprevious-bx">
                                     <button onClick={() => handlePortfolioScreenChange('stardetails')} type="button" className="nextprevious-btn"><i className="fa fa-angle-left" aria-hidden="true"></i>Previous</button>
                                     <button onClick={() => handlePortfolioScreenChange('videoreels')} type="button" className="nextprevious-btn">Next<i className="fa fa-angle-right" aria-hidden="true"></i></button>
