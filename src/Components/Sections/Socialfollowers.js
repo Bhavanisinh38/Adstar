@@ -11,57 +11,66 @@ function Socialfollowers() {
         platform: 'Facebook',
         socialHandle: '@facebook',
         followers: '3.5M',
+        iconClass: 'fa fa-facebook-square',
       },
       {
         id: 2,
         platform: 'Instagram',
         socialHandle: '@instagram',
         followers: '3.5M',
+        iconClass: 'fa fa-instagram',
       },
       {
         id: 3,
         platform: 'Youtube',
         socialHandle: '@youtube',
         followers: '3.5M',
+        iconClass: 'fa fa-youtube-play',
       },
       {
         id: 4,
         platform: 'Twitter',
         socialHandle: '@twitter',
         followers: '3.5M',
+        iconClass: 'fa fa-twitter',
       },
       {
         id: 5,
         platform: 'Telegram',
         socialHandle: '@telegram',
         followers: '3.5M',
+        iconClass: 'fa fa-paper-plane',
       },
       {
         id: 6,
         platform: 'Pinterest',
         socialHandle: '@pinterest',
         followers: '3.5M',
+        iconClass: 'fa fa-pinterest',
       },
       {
         id: 7,
         platform: 'Reddit',
         socialHandle: '@reddit',
         followers: '3.5M',
+        iconClass: 'fa fa-reddit',
       },
       {
         id: 8,
         platform: 'Linkedin',
         socialHandle: '@linkedin',
         followers: '3.5M',
+        iconClass: 'fa fa-linkedin',
       },
       {
         id: 9,
         platform: 'Whatsapp',
         socialHandle: '@whatsapp',
         followers: '3.5M',
+        iconClass: 'fa fa-whatsapp',
       },
     ];
-  
+    
     const toggleAdditionalRows = () => {
       setShowAdditionalRows((prev) => !prev);
     };
@@ -90,26 +99,33 @@ function Socialfollowers() {
 
             <table className="custom-table">
                 <thead>
-                    <tr>
-                        <th>Platform</th>
-                        <th>Social handle</th>
-                        <th className="text-end">Followers</th>
-                    </tr>
+                  <tr>
+                    <th>Platform</th>
+                    <th>Social handle</th>
+                    <th className="text-end">Followers</th>
+                  </tr>
                 </thead>
                 <tbody>
-                    {data.slice(0, rowCount).map((row) => (
-                        <tr key={row.id}>
-                            <td>{row.platform}</td>
-                            <td>{row.socialHandle}</td>
-                            <td className="text-end text-white">{row.followers}</td>
-                        </tr>
-                    ))}
-                    {showAdditionalRows && data.slice(rowCount).map((row) => (
+                  {data.slice(0, rowCount).map((row) => (
                     <tr key={row.id}>
-                        <td>{row.platform}</td>
+                      <td>
+                        <i className={`${row.iconClass} me-1`} aria-hidden="true"></i>
+                        {row.platform}
+                      </td>
+                      <td>{row.socialHandle}</td>
+                      <td className="text-end text-white">{row.followers}</td>
+                    </tr>
+                  ))}
+                  {showAdditionalRows &&
+                    data.slice(rowCount).map((row) => (
+                      <tr key={row.id}>
+                        <td>
+                          <i className={`${row.iconClass} me-1`} aria-hidden="true"></i>
+                          {row.platform}
+                        </td>
                         <td>{row.socialHandle}</td>
                         <td className="text-end text-white">{row.followers}</td>
-                    </tr>
+                      </tr>
                     ))}
                 </tbody>
             </table>
