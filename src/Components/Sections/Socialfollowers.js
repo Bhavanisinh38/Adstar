@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 
 function Socialfollowers() {
     const initialRowCount = 3; // Initial visible rows
-    const [rowCount, setRowCount] = useState(initialRowCount);
     const [showAdditionalRows, setShowAdditionalRows] = useState(false);
   
     const data = [
@@ -106,7 +105,7 @@ function Socialfollowers() {
                   </tr>
                 </thead>
                 <tbody>
-                  {data.slice(0, rowCount).map((row) => (
+                  {data.slice(0, initialRowCount).map((row) => (
                     <tr key={row.id}>
                       <td>
                         <i className={`${row.iconClass} me-1`} aria-hidden="true"></i>
@@ -117,7 +116,7 @@ function Socialfollowers() {
                     </tr>
                   ))}
                   {showAdditionalRows &&
-                    data.slice(rowCount).map((row) => (
+                      data.slice(initialRowCount).map((row) => (
                       <tr key={row.id}>
                         <td>
                           <i className={`${row.iconClass} me-1`} aria-hidden="true"></i>
@@ -131,7 +130,7 @@ function Socialfollowers() {
             </table>
 
             <button className="common-btn" onClick={toggleAdditionalRows}>
-                {showAdditionalRows ? 'Less all' : 'Show All'}
+                {showAdditionalRows ? 'Less more' : 'Show more'}
             </button>
 
         </div>

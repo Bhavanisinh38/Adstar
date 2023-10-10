@@ -582,7 +582,7 @@ body{
 .social-icon.social-media-select .si-sms{
     flex: 0 0 20%;
     padding: 0 3px;
-    margin-bottom: 20px;
+    margin: 10px 0;
 }
 
 .social-icon.social-media-select .si-sms .si-item{

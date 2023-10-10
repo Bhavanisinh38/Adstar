@@ -30,7 +30,7 @@ function Commonpopup() {
                             </span>
                         </div>
                         <div className="custom-modal-data">
-                            <div className="social-icon social-media-select my-2">
+                            <div className="social-icon social-media-select">
                                 <div className="si-sms">
                                     <div className="si-item">
                                         <span className='si-icon'>
@@ -111,6 +111,12 @@ function Commonpopup() {
                                         <div className='si-lable'>Other</div>
                                     </div>
                                 </div>
+                            </div>
+                            <div className='mb-4'>
+                                <button type="button" className="common-submit-btn" disabled>Add Social Media</button>
+                                <button type="button" className="lsb-loader-btn">
+                                    <img src={Img.loading} alt="Please wait" />Please wait ....
+                                </button>
                             </div>
                         </div>
                     </div>
