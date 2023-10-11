@@ -29,7 +29,7 @@ function Contact() {
                         <div className="col-lg-5 col-md-6 mt-3 mt-md-0 order-2 order-md-1">
                             <div className="row">
                                 <div className="col-md-12 col-sm-6">
-                                    <a className="contact-info" href="tel:+918081113111">
+                                    <Link className="contact-info" to="tel:+918081113111">
                                         <span className="contact-icon">
                                             <img src={Img.phone} alt="Phone Icon" />
                                         </span>
@@ -37,11 +37,11 @@ function Contact() {
                                             <h6>Call Us</h6>
                                             <p>+91 808 111 3111</p>
                                         </div>
-                                    </a>
+                                    </Link>
                                 </div>
 
                                 <div className="col-md-12 col-sm-6">
-                                    <a className="contact-info" href="mailto:info@dentriage.com">
+                                    <Link className="contact-info" to="mailto:info@dentriage.com">
                                         <span className="contact-icon">
                                             <img src={Img.email} alt="Email Icon" />
                                         </span>
@@ -49,11 +49,11 @@ function Contact() {
                                             <h6>Email Us</h6>
                                             <p>Info@adstar.com</p>
                                         </div>
-                                    </a>
+                                    </Link>
                                 </div>
 
                                 <div className="col-12">
-                                    <a className="contact-info">
+                                    <Link className="contact-info">
                                         <span className="contact-icon">
                                             <img src={Img.location} alt="Locations Icon" />
                                         </span>
@@ -61,7 +61,7 @@ function Contact() {
                                             <h6>Main Office</h6>
                                             <p>PM Communications, 6th Floor, Zydus Tower, Astron Tower, Iskcon Cross Rd, Satellite, Ahmedabad, Gujarat 380015</p>
                                         </div>
-                                    </a>
+                                    </Link>
                                 </div>
 
                                 <div className="col-12 mt-4">
