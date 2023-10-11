@@ -7,7 +7,7 @@ import {Link} from "react-router-dom";
 function Footer(props) {
     return (
     <>
-        <footer className={`pt-5 mt-5 ${props.footertag}`}>
+        <footer className={`pt-5 ${props.footertag}`}>
             <div className="container-lg cl-custom">
                 <div className="row">
                     <div className="col-md-6">
@@ -29,13 +29,13 @@ function Footer(props) {
                     <div className="col-md-6 mt-2 mt-md-0">
                         <div className="footer-heading">Useful Links</div>
                         <div className="footer-links-bx justify-content-start">
-                            <div className="footer-link">Home</div>
-                            <div className="footer-link">About</div>
-                            <div className="footer-link">FAQs</div>
-                            <div className="footer-link">Privacy</div>
-                            <div className="footer-link">Terms</div>
-                            <div className="footer-link">Help</div>
-                            <div className="footer-link">Sitemap</div>
+                            <Link to="/" className="footer-link">Home</Link>
+                            <Link to="/about" className="footer-link">About</Link>
+                            <Link to="/faqs" className="footer-link">FAQs</Link>
+                            <Link to="/privacy" className="footer-link">Privacy</Link>
+                            <Link to="/terms" className="footer-link">Terms</Link>
+                            <Link to="/help" className="footer-link">Help</Link>
+                            <Link to="/sitemap" className="footer-link">Sitemap</Link>
                         </div>
                     </div>
                     <div className="col-md-6 text-md-end mt-2 mt-md-0">

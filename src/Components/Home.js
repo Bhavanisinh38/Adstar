@@ -20,8 +20,9 @@ function Home() {
       <Categories extraClass="text-md-start text-sm-center" pagetitle="Categories" />
       <Listitem pagetitle="Your City Star" />
       <Videosection pagetitle="Top Business Reels" />
-      <Recentreviews pagetitle="Recent reviews"/>
+      <Recentreviews pagetitle="Recent reviews" />
       <Listitem pagetitle="Recent Star" />
+      <div className="pt-5 pb-3"></div>
     </>
   );
 }

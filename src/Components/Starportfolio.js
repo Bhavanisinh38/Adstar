@@ -658,6 +658,8 @@ function Starportfolio() {
                 </div>
             </section>
 
+            <div className="pt-5"></div>
+
             {showVideoPopup && (
                 <div className="fileupload-video-popup">
 

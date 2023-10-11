@@ -17,6 +17,12 @@ import Starlogin from './Components/Starlogin';
 import Starportfolio from "./Components/Starportfolio";
 import Book from './Components/Book';
 import Account from './Components/Account';
+import About from './Components/About';
+import Terms from './Components/Terms';
+import Privacy from './Components/Privacy';
+import FAQs from './Components/Faqs';
+import Contact from './Components/Contact';
+import Sitemap from './Components/Sitemap';
 
 // Footer Section
 import Commonpopup from './Components/Sections/Commonpopup';
@@ -59,7 +65,13 @@ function App() {
             <Route path="/starportfolio" element={<Starportfolio />} />
             <Route path="/book" element={<Book />} />
             <Route path="/account" element={<Account />} />
-            <Route path="/staraccount" element={<Account startfield="" />} />
+            <Route path="/staraccount" element={<Account />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/terms" element={<Terms />} />
+            <Route path="/privacy" element={<Privacy />} />
+            <Route path="/faqs" element={<FAQs />} />
+            <Route path="/help" element={<Contact />} />
+            <Route path="/sitemap" element={<Sitemap />} />
         </Routes>
         <Commonpopup />
         <FlashMessage />

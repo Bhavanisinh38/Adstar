@@ -184,6 +184,8 @@ function Detail() {
 
             <Faqs/>
 
+            <div className="pt-5"></div>
+
             {/* <div className="last-section"></div> */}
 
             <div className={`detail-overlay ${isSecureNote ? 'secure-active' : ''} `} onClick={closeSecureNote}></div>
@@ -279,6 +281,8 @@ function Detail() {
                     </div>
                 </div>
             </div>
+
+            
         </>
     );
 }

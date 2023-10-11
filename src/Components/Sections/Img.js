@@ -8,6 +8,10 @@ import logo_color from '../../img/logo/logo.png'
 import logo_white from '../../img/logo/logo-white.png'
 
 
+// Store Icons img
+import playstore from '../../img/icons/play_store.png';
+import appstore from '../../img/icons/appstore.png';
+
 // Serach Page icons & other Icons
 import verified from '../../img/icons/verified.png'
 import user from '../../img/icons/user.jpg'
@@ -20,6 +24,25 @@ import video from '../../img/icons/video.png'
 import success from '../../img/icons/success.png'
 import error from '../../img/icons/error.png'
 import empty from '../../img/icons/empty.png'
+
+
+// About Adstar
+import aboutfulladstar from '../../img/aboutfulladstar.mp4'
+import appdemo from '../../img/appdemo.png'
+
+
+// How adstar works Page
+import hiw1 from '../../img/howitworks/hiw1.png'
+import hiw2 from '../../img/howitworks/hiw2.png'
+import hiw3 from '../../img/howitworks/hiw3.mp4'
+
+
+// Contact Us Page Icon
+import company from '../../img/icons/company.svg'
+import email from '../../img/icons/email.svg'
+import phone from '../../img/icons/phone-call.svg'
+import location from '../../img/icons/location.svg'
+
 
 // Demo images
 import demo_img1 from '../../img/demo-img.jpg';
@@ -43,7 +66,11 @@ import Payment_icon5 from '../../img/icons/ApplePay.svg';
 export { 
     icon_color, icon_black, icon_white,
     logo_color, logo_white,
+    playstore, appstore,
     verified, user, userm, sort, filter, day, loading, video, success, error, empty,
+    aboutfulladstar, appdemo,
+    hiw1, hiw2, hiw3,
+    company, email, phone, location,
     demo_img1, demo_img2, 
     demo_video, demo_video2, demo_video3, 
     patent1,
