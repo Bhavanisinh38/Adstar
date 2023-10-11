@@ -92,6 +92,36 @@
     padding-bottom: 50px;
 }
 
+.smb-menu-bx ul .smb-nav-lable{
+    position: relative;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    display: block;
+    padding: 10px 0px;
+    margin: 0 15px;
+}
+
+.smb-menu-bx ul .smb-nav-lable::before,
+.smb-menu-bx ul .smb-nav-lable::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 20px;
+    height: 1px;
+    border-radius: 5px;
+    background-color: rgb(63, 59, 69);
+}
+
+.smb-menu-bx ul .smb-nav-lable::before{
+    left: inherit;
+    right: 0;
+    top: 100%;
+    width: calc(100% - 30px);
+    background-color: rgb(63, 59, 69);
+}
+
 .smb-menu-bx ul li {
     margin: 0px 0;
     opacity: 0;
@@ -165,7 +195,7 @@
     text-decoration: none;
     color: #ffffff;
     position: relative;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
     height: 45px;
     font-size: 16px;
     font-weight: 400;

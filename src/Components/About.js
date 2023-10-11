@@ -35,6 +35,7 @@ function About() {
                                 <video autoPlay muted loop className="cdl-video cdl-pe-none cdl-video2">
                                     <source src={Img.aboutfulladstar} type="video/mp4" />
                                 </video>
+                                {/* <img className="cdl-img" src={Img.hiw1} alt="Stpe 1" /> */}
                             </div>
                         </div>
                     </div>
@@ -110,7 +111,7 @@ function About() {
                             </div>
                         </div>
                         <div className="col-md-5">
-                            <div className="common-digital-layout">
+                            <div className="common-digital-layout mt-4 mt-md-0">
                                 <img className="cdl-img" src={Img.appdemo} alt="App Img" />
                             </div>
                         </div>

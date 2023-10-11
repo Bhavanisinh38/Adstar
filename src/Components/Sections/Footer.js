@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link} from "react-router-dom";
+import {Link, NavLink} from "react-router-dom";
 
 // Images Common File
 // import * as Img from './Img';
@@ -29,13 +29,13 @@ function Footer(props) {
                     <div className="col-md-6 mt-2 mt-md-0">
                         <div className="footer-heading">Useful Links</div>
                         <div className="footer-links-bx justify-content-start">
-                            <Link to="/" className="footer-link">Home</Link>
-                            <Link to="/about" className="footer-link">About</Link>
-                            <Link to="/faqs" className="footer-link">FAQs</Link>
-                            <Link to="/privacy" className="footer-link">Privacy</Link>
-                            <Link to="/terms" className="footer-link">Terms</Link>
-                            <Link to="/help" className="footer-link">Help</Link>
-                            <Link to="/sitemap" className="footer-link">Sitemap</Link>
+                            <NavLink to="/" className="footer-link">Home</NavLink>
+                            <NavLink to="/about" className="footer-link">About</NavLink>
+                            <NavLink to="/faqs" className="footer-link">FAQs</NavLink>
+                            <NavLink to="/privacy" className="footer-link">Privacy</NavLink>
+                            <NavLink to="/terms" className="footer-link">Terms</NavLink>
+                            <NavLink to="/help" className="footer-link">Help</NavLink>
+                            <NavLink to="/sitemap" className="footer-link">Sitemap</NavLink>
                         </div>
                     </div>
                     <div className="col-md-6 text-md-end mt-2 mt-md-0">

@@ -1,6 +1,6 @@
 import $ from 'jquery';
 import React, { useState, useEffect } from 'react';
-import {Link} from "react-router-dom";
+import {Link, NavLink} from "react-router-dom";
 
 // Images Common File
 import * as Img from './Img';
@@ -43,7 +43,7 @@ function Sidemenu() {
                             <div className="alp-email-lable">Fabrizio@gmail.com</div>
                         </div>
                     </Link>
-                    <ul>
+                    <ul className="pb-0">
                         <li className={`smb-drop-menu ${isActive ? 'active' : ''}`}>
                             <div className="smb-link smb-link-not" onClick={handleItemClick}>Categories<i className="fa fa-angle-right" aria-hidden="true"></i></div>
                             <div className="smb-drop-bx">
@@ -58,6 +58,17 @@ function Sidemenu() {
                         <li><Link to="/about" className="smb-link">How it works</Link></li>
                         <li><Link to="/starlogin" className="smb-link">Join as star</Link></li>
                         <li><Link to="/starportfolio" className="smb-link">Star portfolio</Link></li>
+                    </ul>
+
+                    <ul>
+                        <div className="smb-nav-lable mt-3">Usefull link</div>
+                        <li><NavLink to="/" className="smb-link">Home</NavLink></li>
+                        <li><NavLink to="/about" className="smb-link">About</NavLink></li>
+                        <li><NavLink to="/faqs" className="smb-link">FAQs</NavLink></li>
+                        <li><NavLink to="/privacy" className="smb-link">Privacy</NavLink></li>
+                        <li><NavLink to="/terms" className="smb-link">Terms</NavLink></li>
+                        <li><NavLink to="/help" className="smb-link">Help</NavLink></li>
+                        <li><NavLink to="/sitemap" className="smb-link">Sitemap</NavLink></li>
                     </ul>
                 </div>
 
