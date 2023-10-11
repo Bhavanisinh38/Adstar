@@ -181,8 +181,7 @@ function Header() {
               </div>
 
             </div>
-
-            <div className="cmb-item">For business</div>
+            
             <Link to="/about" className="cmb-item">How it works</Link>
             <Link to="/starlogin" className="cmb-item">Join as star</Link>
             <Link to="/starportfolio" className="cmb-item">Star portfolio</Link>
