@@ -31,13 +31,7 @@ function Sitemap() {
                             </Link>
                         </li>
                         <li>
-                            <Link className="sitemap-link" to="/">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="48" d="M184 112l144 144-144 144"/></svg>
-                                How it works
-                            </Link>
-                        </li>
-                        <li>
-                            <Link className="sitemap-link" to="/">
+                            <Link className="sitemap-link" to="/about">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="48" d="M184 112l144 144-144 144"/></svg>
                                 About
                             </Link>

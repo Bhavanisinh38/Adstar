@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 //Design Files
 import Starrating from './Starrating';
+import Chatmessage from './Chatmessage';
 
 // Images Common File
 import * as Img from './Img';
@@ -247,6 +248,16 @@ function Commonpopup() {
                     </div>
                 </div>
             </div>
+
+            {/* Chat Message Popup */}
+            <div className="modal fade zoom" id="Chatmessage" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div className="modal-dialog modal-xl modal-dialog-centered">
+                    <div className="modal-content custom-content chatmessage-content">
+                        <Chatmessage />
+                    </div>
+                </div>
+            </div>
+
         </>
     );
 }

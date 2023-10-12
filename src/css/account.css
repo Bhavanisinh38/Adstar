@@ -388,21 +388,42 @@
     overflow: hidden;
 }
 
-/* --- Follow list --- */
 
+/* --- Follow list --- */
 .follow-item{
     position: relative;
     display: flex;
     align-items: center;
     white-space: nowrap;
+    cursor: pointer;
     width: 100%;
-    padding: 15px 0;
-    padding-right: 105px;
-    border-bottom: 1px solid rgb(63, 59, 69);
+    padding: 10px 10px;
+    padding-right: 70px;
+    border-radius: 10px;
+    margin: 9px 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.follow-item::after{
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 1px;
+    background-color:rgb(63, 59, 69);
+}
+
+.follow-item:hover{
+    background-color: rgb(25, 24, 27);
 }
 
 .follow-item:last-child{
-    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.follow-item:last-child::after{
+    content: none;
 }
 
 .follow-item .follow-img{
@@ -410,7 +431,7 @@
     height: 45px;
     flex: 0 0 45px;
     border-radius: 50%;
-    margin-right: 8px;
+    margin-right: 10px;
 }
 
 .follow-item .follow-data .follow-name-lable{
@@ -450,6 +471,102 @@
 .follow-item .fi-btn.unfollow:hover{
     color: white;
     background-color: #c70000;
+}
+
+
+/* --- Follow list --- */
+.chat-item{
+    position: relative;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    cursor: pointer;
+    width: 100%;
+    padding: 10px 10px;
+    padding-right: 70px;
+    border-radius: 10px;
+    margin: 9px 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.chat-item::after{
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 1px;
+    background-color:rgb(63, 59, 69);
+}
+
+.chat-item:hover{
+    background-color: rgb(25, 24, 27);
+}
+
+.chat-item:last-child{
+    margin-bottom: 0;
+}
+
+.chat-item:last-child::after{
+    content: none;
+}
+
+.chat-item .chat-img{
+    width: 45px;
+    height: 45px;
+    flex: 0 0 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.chat-item .chat-data{
+    overflow: hidden;
+}
+
+.chat-item .chat-data .chat-name-lable{
+    font-size: 14px;
+    font-weight: 500;
+    color: #f2f1f3;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.chat-item .chat-data .chat-last-tag{
+    color: #BFBAC4;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.chat-item .chat-time{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: #BFBAC4;
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.chat-item .chat-num{
+    position: absolute;
+    right: 10px;
+    top: 36px;
+    z-index: 1;
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    background-color: #8036e0;
+    display: block;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 11px;
 }
 
 

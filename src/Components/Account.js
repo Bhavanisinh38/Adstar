@@ -156,6 +156,13 @@ function Account() {
                         Notifications
                     </div>
 
+                    <div className={`amb-link ${accountScreen === 'accountmessage' ? 'active' : ''}`} 
+                         onClick={() => handleScreenChange('accountmessage')}>
+                        <span className="amb-num">5</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M87.48 380c1.2-4.38-1.43-10.47-3.94-14.86a42.63 42.63 0 00-2.54-3.8 199.81 199.81 0 01-33-110C47.64 139.09 140.72 48 255.82 48 356.2 48 440 117.54 459.57 209.85a199 199 0 014.43 41.64c0 112.41-89.49 204.93-204.59 204.93-18.31 0-43-4.6-56.47-8.37s-26.92-8.77-30.39-10.11a31.14 31.14 0 00-11.13-2.07 30.7 30.7 0 00-12.08 2.43L81.5 462.78a15.92 15.92 0 01-4.66 1.22 9.61 9.61 0 01-9.58-9.74 15.85 15.85 0 01.6-3.29z" fill="none" stroke="currentColor" strokeLinecap="round" strokeMiterlimit="10" strokeWidth="32"/><circle fill="currentColor" cx="160" cy="256" r="32"/><circle fill="currentColor" cx="256" cy="256" r="32"/><circle fill="currentColor" cx="352" cy="256" r="32"/></svg>
+                        Message
+                    </div>
+
                     <div className="amb-link">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M378 108a191.41 191.41 0 0170 148c0 106-86 192-192 192S64 362 64 256a192 192 0 0169-148M256 64v192" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="32"/></svg>
                         Logout
@@ -1254,6 +1261,83 @@ function Account() {
                         </div>
                     </div>
                     {/* --- Notification Bx End --- */}
+
+
+                    {/* --- Message Bx start  --- */}
+                    <div className={`amib-inner-item  ${accountScreen === 'accountmessage' ? 'active' : ''} `} id="accountmessage">
+                        <div className="amib-992-width">
+                            <div className="amib-i-header">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M87.48 380c1.2-4.38-1.43-10.47-3.94-14.86a42.63 42.63 0 00-2.54-3.8 199.81 199.81 0 01-33-110C47.64 139.09 140.72 48 255.82 48 356.2 48 440 117.54 459.57 209.85a199 199 0 014.43 41.64c0 112.41-89.49 204.93-204.59 204.93-18.31 0-43-4.6-56.47-8.37s-26.92-8.77-30.39-10.11a31.14 31.14 0 00-11.13-2.07 30.7 30.7 0 00-12.08 2.43L81.5 462.78a15.92 15.92 0 01-4.66 1.22 9.61 9.61 0 01-9.58-9.74 15.85 15.85 0 01.6-3.29z" fill="none" stroke="currentColor" strokeLinecap="round" strokeMiterlimit="10" strokeWidth="32"/><circle fill="currentColor" cx="160" cy="256" r="32"/><circle fill="currentColor" cx="256" cy="256" r="32"/><circle fill="currentColor" cx="352" cy="256" r="32"/></svg>
+                                Messages
+                            </div>
+                            <div className="amib-item">
+                                <form action="">
+                                    <div className="chat-list-bx">
+
+                                        <div className="chat-item" data-bs-target="#Chatmessage" data-bs-toggle="modal">
+                                            <img className="chat-img" src={Img.demo_img1} alt="" />
+                                            <div className="chat-data">
+                                                <div className="chat-name-lable">Bhavanisinh Parmar</div>
+                                                <div className="chat-last-tag">hi, Good morning</div>
+                                            </div>
+                                            <div className="chat-time">6:25pm</div>
+                                            <div className='chat-num'>99</div>
+                                        </div>
+
+                                        <div className="chat-item" data-bs-target="#Chatmessage" data-bs-toggle="modal">
+                                            <img className="chat-img" src={Img.demo_img1} alt="" />
+                                            <div className="chat-data">
+                                                <div className="chat-name-lable">Bhavanisinh Parmar</div>
+                                                <div className="chat-last-tag">hi, Good morning</div>
+                                            </div>
+                                            <div className="chat-time">Yesterday</div>
+                                            <div className='chat-num'>99</div>
+                                        </div>
+
+                                        <div className="chat-item" data-bs-target="#Chatmessage" data-bs-toggle="modal">
+                                            <img className="chat-img" src={Img.demo_img1} alt="" />
+                                            <div className="chat-data">
+                                                <div className="chat-name-lable">Bhavanisinh Parmar</div>
+                                                <div className="chat-last-tag">hi, Good morning</div>
+                                            </div>
+                                            <div className="chat-time">01/10/2023</div>
+                                            <div className='chat-num d-none'>00</div>
+                                        </div>
+
+                                        <div className="chat-item" data-bs-target="#Chatmessage" data-bs-toggle="modal">
+                                            <img className="chat-img" src={Img.demo_img1} alt="" />
+                                            <div className="chat-data">
+                                                <div className="chat-name-lable">Bhavanisinh Parmar</div>
+                                                <div className="chat-last-tag">hi, Good morning</div>
+                                            </div>
+                                            <div className="chat-time">08/01/2020</div>
+                                            <div className='chat-num d-none'>00</div>
+                                        </div>
+
+                                        <div className="chat-item" data-bs-target="#Chatmessage" data-bs-toggle="modal">
+                                            <img className="chat-img" src={Img.demo_img1} alt="" />
+                                            <div className="chat-data">
+                                                <div className="chat-name-lable">Bhavanisinh Parmar</div>
+                                                <div className="chat-last-tag">hi, Good morning</div>
+                                            </div>
+                                            <div className="chat-time">08/01/2016</div>
+                                            <div className='chat-num d-none'>00</div>
+                                        </div>
+
+                                    </div>
+                                </form>
+                            </div>
+
+                            <div className="empty-div-bx">
+                                <img className="empty-img" src={Img.empty} alt="Data is not available" />
+                                <div className="empty-heading">Not Found</div>
+                                <div className="empty-sub-heading">There are no new message</div>
+                            </div>
+
+                        </div>
+                    </div>
+                    {/* --- Message Bx End  --- */}
+
 
                 </div>
             </div>
