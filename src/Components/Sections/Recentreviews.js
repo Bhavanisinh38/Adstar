@@ -111,6 +111,16 @@ function Recentreviews(props) {
                 </div>
             </OwlCarousel>
             <button className="common-btn mt-3" data-bs-target="#addreviewmodal" data-bs-toggle="modal">Add review</button>
+            
+            {/* --- skeletant start --- */}
+            {/* <div className='owl-skeletant'>
+                <div className={`reviews-section ${props.detailrs}  skeletant-bx skeletant-design skeletant-height`}></div>
+                <div className={`reviews-section ${props.detailrs}  skeletant-bx skeletant-design skeletant-height`}></div>
+                <div className={`reviews-section ${props.detailrs} skeletant-bx skeletant-design skeletant-height`}></div>
+                <div className={`reviews-section ${props.detailrs} skeletant-bx skeletant-design skeletant-height`}></div>
+            </div> */}
+            {/* --- skeletant end --- */}
+
         </div>
       </section>
       </>
@@ -120,6 +130,7 @@ function Recentreviews(props) {
 export default Recentreviews;
 
 Recentreviews.defaultProps = {
+    detailrs: " ",
     rdc: "d-none",
     mw992: "3.2",
     allreviewsbtn: "d-none",

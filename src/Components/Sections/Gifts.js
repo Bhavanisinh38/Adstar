@@ -57,6 +57,32 @@ function Gifts() {
               </div>
           </OwlCarousel>
 
+          {/* --- skeletant start --- */}
+          {/* <div className='owl-skeletant'>
+      
+            <div className="gifts-item skeletant-bx skeletant-design">
+                <div className="gifts-lable skeletant-design ld4"></div>
+                <div className="gifts-data skeletant-design ld1"></div>
+            </div>
+      
+            <div className="gifts-item skeletant-bx skeletant-design">
+                <div className="gifts-lable skeletant-design ld4"></div>
+                <div className="gifts-data skeletant-design ld1"></div>
+            </div>
+      
+            <div className="gifts-item skeletant-bx skeletant-design">
+                <div className="gifts-lable skeletant-design ld4"></div>
+                <div className="gifts-data skeletant-design ld1"></div>
+            </div>
+      
+            <div className="gifts-item skeletant-bx skeletant-design">
+                <div className="gifts-lable skeletant-design ld4"></div>
+                <div className="gifts-data skeletant-design ld1"></div>
+            </div>
+            
+          </div> */}
+          {/* --- skeletant end --- */}
+
       </div>
     </section>
     </>

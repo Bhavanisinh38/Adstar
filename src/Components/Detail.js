@@ -90,6 +90,19 @@ function Detail() {
                                         </div>
                                     </div>
                                 </div>
+                                {/* --- skeletant start --- */}
+                                {/* <div className="dmb-profile-bx skeletant-bx">
+                                    <div className="dpb-img-bx skeletant-design"></div>
+                                    <div className="dpb-data-bx" style={{width:"100%"}} >
+                                        <div className="skeletant-design ld1"></div>
+                                        <div className="skeletant-design ld5"></div>
+                                        <div className="skeletant-design ld4"></div>
+                                        <div className="skeletant-design ld1 mt-3"></div>
+                                        <div className="skeletant-design ld1"></div>
+                                        <div className="skeletant-design ld2"></div>
+                                    </div>
+                                </div> */}
+                                {/* --- skeletant end --- */}
                                 <div className="dmb-book-btns d-block d-lg-none mt-4">
                                     <Link to="/book" className="dbb-btn video-book-btn">Book a personal video ₹2,493</Link>
                                     <div className="row">
@@ -131,7 +144,7 @@ function Detail() {
 
                             <div className="sectiongap"></div>
 
-                            <Recentreviews mw992="2.4" pagetitle="Reviews" rdc=" " allreviewsbtn="d-block" rstc="d-none" />
+                            <Recentreviews mw992="2.4" pagetitle="Reviews" detailrs="detail-rs" rdc=" " allreviewsbtn="d-block" rstc="d-none" />
                         </div>
                         <aside className="dmb-left">
                             <div className="dmb-left-inner">

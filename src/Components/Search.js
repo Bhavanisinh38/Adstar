@@ -377,6 +377,20 @@ function Search() {
                                 </div>
                             </Link>
                         </div>
+
+                        {/* --- skeletant start --- */}
+                        {/* <div className="col-lg-3 col-md-4 col-sm-6 col-6 mt-4">
+                            <div className="celebrity-item ci-two skeletant-bx">
+                                <div>
+                                    <div className="celebrity-img-bx skeletant-design"></div>
+                                    <div className="favourite-tag skeletant-design"></div>
+                                    <div className="skeletant-design ld1 mt-3"></div>
+                                    <div className="skeletant-design ld4"></div>
+                                    <div className="skeletant-design ld1 mt-3"></div>
+                                </div>
+                            </div>
+                        </div> */}
+                        {/* --- skeletant end --- */}
             
                     </div>
 

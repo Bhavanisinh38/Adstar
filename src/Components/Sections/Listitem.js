@@ -265,6 +265,53 @@ function Listitem(props) {
               </div>
             </Link>
 
+            {/* --- skeletant start --- */}
+            {/* <div className='owl-skeletant'>
+              <div className="celebrity-item skeletant-bx">
+                  <div>
+                      <div className="celebrity-img-bx skeletant-design"></div>
+                      <div className="skeletant-design ld1 mt-3"></div>
+                      <div className="skeletant-design ld4 mx-auto"></div>
+                  </div>
+              </div>
+              <div className="celebrity-item skeletant-bx">
+                  <div>
+                      <div className="celebrity-img-bx skeletant-design"></div>
+                      <div className="skeletant-design ld1 mt-3"></div>
+                      <div className="skeletant-design ld4 mx-auto"></div>
+                  </div>
+              </div>
+              <div className="celebrity-item skeletant-bx">
+                  <div>
+                      <div className="celebrity-img-bx skeletant-design"></div>
+                      <div className="skeletant-design ld1 mt-3"></div>
+                      <div className="skeletant-design ld4 mx-auto"></div>
+                  </div>
+              </div>
+              <div className="celebrity-item skeletant-bx">
+                  <div>
+                      <div className="celebrity-img-bx skeletant-design"></div>
+                      <div className="skeletant-design ld1 mt-3"></div>
+                      <div className="skeletant-design ld4 mx-auto"></div>
+                  </div>
+              </div>
+              <div className="celebrity-item skeletant-bx">
+                  <div>
+                      <div className="celebrity-img-bx skeletant-design"></div>
+                      <div className="skeletant-design ld1 mt-3"></div>
+                      <div className="skeletant-design ld4 mx-auto"></div>
+                  </div>
+              </div>
+              <div className="celebrity-item skeletant-bx">
+                  <div>
+                      <div className="celebrity-img-bx skeletant-design"></div>
+                      <div className="skeletant-design ld1 mt-3"></div>
+                      <div className="skeletant-design ld4 mx-auto"></div>
+                  </div>
+              </div>
+            </div> */}
+            {/* --- skeletant end --- */}
+
           </OwlCarousel>
 
       </div>

@@ -117,6 +117,10 @@ function Celebrityvideo({src}) {
               </div>
             </div>
         </div>
+
+        {/* --- skeletant start --- */}
+          {/* <div className='celebrity-video-item skeletant-bx skeletant-design'></div> */}
+        {/* --- skeletant end --- */}
     </>
   );
 }

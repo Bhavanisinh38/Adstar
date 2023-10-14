@@ -75,6 +75,15 @@ function Categories(props) {
                 </div>
               </Link>
 
+              {/* --- skeletant start --- */}
+              {/* <div className="crc-item skeletant-bx">
+                <div className="crc-item-inner">
+                  <div className="crc-img skeletant-design border-0"></div>
+                  <div className="skeletant-design ld4 mx-auto mt-3"></div>
+                </div>
+              </div> */}
+              {/* --- skeletant end --- */}
+
             </div>
           </div>
         </section>

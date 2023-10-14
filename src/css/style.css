@@ -134,6 +134,161 @@ body{
 }
 
 
+/* --- Skeletant Design Css --- */
+.skeletant-bx {
+    pointer-events: none;
+}
+
+.skeletant-height{
+    height: 180px;
+}
+
+.skeletant-design {
+    background-color: #242325;
+    background-image: url("../img/logo/a-icon.png"),  linear-gradient(90deg, #242325 40%, rgb(0 0 0) 50%, #242325 60%);
+    background-position:center , left;
+    background-repeat:no-repeat, repeat;
+    background-size:40%, 1200px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    animation: shine-lines 0.5s infinite linear;
+    pointer-events: none;
+}
+
+.skeletant-design.ld5,
+.skeletant-design.ld4,
+.skeletant-design.ld3,
+.skeletant-design.ld2,
+.skeletant-design.ld1{
+    width: 100%;
+    border-radius: 50px;
+    background-size:0%, 1200px;
+}
+
+.skeletant-design.ld1{
+    height: 18px;
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+
+.skeletant-design.ld2{
+    width: 100px;
+    height: 20px;
+}
+
+.skeletant-design.ld3 {
+    height: 16px;
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+
+.skeletant-design.ld4{
+    width: 100px;
+    height: 12px;
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+
+.skeletant-design.ld5{
+    max-width: 450px;
+    width: 100%;
+    height: 14px;
+}
+
+.skeletant-design.ld-no-img{
+    background-size:0, 1200px;
+}
+
+@-webkit-keyframes shine-lines {
+    0% {
+        background-position: center, -100px;
+    }
+
+    100% {
+        background-position: center, 1100px;
+    }
+}
+
+@keyframes shine-lines {
+    0% {
+        background-position: center, -100px;
+    }
+
+    100% {
+        background-position: center, 1100px;
+    }
+}
+
+.owl-skeletant{
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    max-width: 100%;
+}
+
+.owl-skeletant > div.celebrity-item{
+    margin-right: 15px
+}
+
+
+.gifts-item.skeletant-bx::before{
+    content: none;
+}
+
+.owl-skeletant > .reviews-section.skeletant-bx,
+.owl-skeletant > .gifts-item.skeletant-bx{
+    margin-right: 20px;
+}
+
+@media screen and (min-width:1px) {
+    .owl-skeletant > div.celebrity-item{
+        flex: 0 0 calc(50% - 15px);
+    }
+
+    .owl-skeletant > .reviews-section.detail-rs.skeletant-bx,
+    .owl-skeletant > .reviews-section.skeletant-bx,
+    .owl-skeletant > .gifts-item.skeletant-bx{
+        flex: 0 0 calc(80% - 0px);
+    }
+}
+
+@media screen and (min-width:576px) {
+    .owl-skeletant > div.celebrity-item{
+        flex: 0 0 calc(33.33% - 15px);
+    }
+
+    .owl-skeletant > .reviews-section.detail-rs.skeletant-bx,
+    .owl-skeletant > .reviews-section.skeletant-bx,
+    .owl-skeletant > .gifts-item.skeletant-bx{
+        flex: 0 0 calc(40% - 0px);
+    }
+}
+
+@media screen and (min-width:768px) {
+    .owl-skeletant > div.celebrity-item{
+        flex: 0 0 calc(25% - 15px);
+    }
+
+}
+
+@media screen and (min-width:992px) {
+    .owl-skeletant > div.celebrity-item{
+        flex: 0 0 calc(20% - 15px);
+    }
+
+    .owl-skeletant > .reviews-section.skeletant-bx,
+    .owl-skeletant > .gifts-item.skeletant-bx{
+        flex: 0 0 calc(31.75% - 20px);
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .owl-skeletant > div.celebrity-item{
+        flex: 0 0 calc(16.66% - 15px);
+    }
+}
+
+
 /* --- Page wraper --- */
 .pagewraper{
     opacity: 0;
