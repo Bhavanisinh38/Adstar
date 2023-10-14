@@ -57,7 +57,7 @@ function Listitem(props) {
                   <img className="celebrity-img" src={Img.demo_img2} alt="Celebrity Name" />
                   <div className="celebrity-highlight">New</div>
                 </div>
-                <div className="celebrity-name">Captain Jason Chambers</div>
+                <div className="celebrity-name"><img title="Verified Celebrity" src={Img.verified} alt="Verified Icon" />Captain Jason Chambers</div>
                 {/* <div className="celebrity-profession">Below Deck Down Under</div> */}
                 <div className="celebrity-categorie">Actor</div>
                 <div className="celebrity-followers-tags">
@@ -242,7 +242,7 @@ function Listitem(props) {
                   <img className="celebrity-img" src={Img.demo_img2} alt="Celebrity Name" />
                   <div className="celebrity-highlight">New</div>
                 </div>
-                <div className="celebrity-name">Captain Jason Chambers</div>
+                <div className="celebrity-name"><img title="Verified Celebrity" src={Img.verified} alt="Verified Icon" />Captain Jason Chambers</div>
                 {/* <div className="celebrity-profession">Below Deck Down Under</div> */}
                 <div className="celebrity-categorie">Actor</div>
                 <div className="celebrity-followers-tags">

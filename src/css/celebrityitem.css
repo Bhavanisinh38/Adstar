@@ -28,6 +28,7 @@
     transition: transform 0.3s ease-in-out;
 }
 
+.celebrity-item.ci-two .celebrity-highlight,
 .celebrity-item .celebrity-img-bx .celebrity-highlight{
     position: absolute;
     right: 0;
@@ -110,6 +111,16 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+.celebrity-item .celebrity-name img{
+    width: 16px !important;
+    max-width: 16px !important;
+    height: 16px;
+    display: inline-block !important;
+    position: relative;
+    top: -2px;
+    margin-right: 3px;
 }
 
 .celebrity-item .celebrity-categorie{
@@ -202,6 +213,7 @@
 
 .celebrity-item .celebrity-verified-tag{
     display: flex;
+    display: none;
     margin-top: 10px;
     color: rgb(255, 255, 255);
     font-size: 12px;
@@ -272,6 +284,14 @@
 
 .celebrity-item.ci-two .celebrity-name{
     font-size: 16px;
+}
+
+.celebrity-item.ci-two .celebrity-highlight{
+    right: inherit;
+    left: -1px;
+    top: -1px;
+    border-radius: 12px 0 40px 0;
+    padding: 8px 12px 0px 4px;
 }
 
 .celebrity-item.ci-two .celebrity-profession{
