@@ -1,5 +1,5 @@
-import $ from 'jquery';
-import React, { useState, useEffect } from 'react';
+// import $ from 'jquery';
+import React, { useState } from 'react';
 import {Link, NavLink} from "react-router-dom";
 
 // Images Common File
@@ -13,16 +13,24 @@ function Sidemenu() {
       setIsActive((prevIsActive) => !prevIsActive);
     };
 
-    useEffect(() => {
-        $(".smb-drop-bx > .smb-link").on("click", function () {
-            $(".smb-main-bx").addClass("smb-hide");
-            $(".smb-seconde-bx").addClass("smb-se-show");
-        });
-        $(".smb-link-name").on("click", function () {
-            $(".smb-main-bx").removeClass("smb-hide");
-            $(".smb-seconde-bx").removeClass("smb-se-show");
-        });
-    });
+    const [submenuActive, setSubMenuActive] = useState(false);
+
+    const handleCategoryClick = (e) => {
+        e.preventDefault();
+
+        setSubMenuActive(true);
+
+        // $(".smb-main-bx").removeClass("smb-hide");
+        // $(".smb-seconde-bx").addClass('d-none');
+        // $(".smb-main-bx").addClass("smb-hide");
+        // $('#category'+cat).removeClass("d-none");
+        // $('#category'+cat).addClass("smb-se-show");
+    }
+
+    const handleCategorybackClick = () => {
+        setSubMenuActive(false);
+    }
+
     return (
         <>
             <aside className="side-menu-bx">
@@ -35,7 +43,7 @@ function Sidemenu() {
                     </Link>
                 </div>
 
-                <div className="smb-menu-bx smb-main-bx">
+                <div className={`smb-menu-bx smb-main-bx ${submenuActive ? 'smb-hide' : ''}`}>
                     <Link to="/staraccount" className="account-left-pic">
                         <img className="alp-img" src={Img.demo_img1} alt="" />
                         <div className="alp-data">
@@ -47,12 +55,12 @@ function Sidemenu() {
                         <li className={`smb-drop-menu ${isActive ? 'active' : ''}`}>
                             <div className="smb-link smb-link-not" onClick={handleItemClick}>Categories<i className="fa fa-angle-right" aria-hidden="true"></i></div>
                             <div className="smb-drop-bx">
-                                <div className="smb-link">Actors<i className="fa fa-angle-right" aria-hidden="true"></i></div>
-                                <div className="smb-link">Athletes<i className="fa fa-angle-right" aria-hidden="true"></i></div>
-                                <div className="smb-link">Comedians<i className="fa fa-angle-right" aria-hidden="true"></i></div>
-                                <div className="smb-link">Creators<i className="fa fa-angle-right" aria-hidden="true"></i></div>
-                                <div className="smb-link">Musicians<i className="fa fa-angle-right" aria-hidden="true"></i></div>
-                                <div className="smb-link">Reality TV<i className="fa fa-angle-right" aria-hidden="true"></i></div>
+                                <div onClick={handleCategoryClick} className="smb-link">Actors<i className="fa fa-angle-right" aria-hidden="true"></i></div>
+                                <div onClick={handleCategoryClick} className="smb-link">Athletes<i className="fa fa-angle-right" aria-hidden="true"></i></div>
+                                <div onClick={handleCategoryClick} className="smb-link">Comedians<i className="fa fa-angle-right" aria-hidden="true"></i></div>
+                                <div onClick={handleCategoryClick} className="smb-link">Creators<i className="fa fa-angle-right" aria-hidden="true"></i></div>
+                                <div onClick={handleCategoryClick} className="smb-link">Musicians<i className="fa fa-angle-right" aria-hidden="true"></i></div>
+                                <div onClick={handleCategoryClick} className="smb-link">Reality TV<i className="fa fa-angle-right" aria-hidden="true"></i></div>
                             </div>
                         </li>
                         <li><Link to="/about" className="smb-link">How it works</Link></li>
@@ -72,8 +80,8 @@ function Sidemenu() {
                     </ul>
                 </div>
 
-                <div className="smb-menu-bx smb-seconde-bx">
-                    <div className="smb-link-name"><i className="fa fa-angle-left" aria-hidden="true"></i>Athletes</div>
+                <div className={`smb-menu-bx smb-seconde-bx ${submenuActive ? 'smb-se-show' : ''}`}>
+                    <div onClick={handleCategorybackClick} className="smb-link-name"><i className="fa fa-angle-left" aria-hidden="true"></i>Athletes</div>
                     <ul>
                         <li><div className="smb-link">Actors</div></li>
                         <li><div className="smb-link">Athletes</div></li>
